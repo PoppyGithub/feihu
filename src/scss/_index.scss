@@ -1,0 +1,406 @@
+#container{
+  width: 1267px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#header{
+  @include setBorderdir(bottom,1px,#CCCCCC);
+  @include setHeight(29px);
+  .headleft{
+    @include setfloat(left);
+    @include setMargin(left,30px);
+    li{
+      @include setfloat(left);
+      @include setMargin(right,10px);
+      font-size: $normalSize;
+    }
+  }
+  .headright{
+    @include setfloat(right);
+    @include setMargin(right,34px);
+    li{
+      @include setfloat(left);
+      @include setMargin(right,5px);
+      font-size: $normalSize;
+      color: $color;
+      a{
+        color: $color;
+      }
+    }
+    .myaccount{
+      @include setMargin(right,43px);
+    }
+    .phone{
+      @extend %fontWight;
+      @include setMargin(left,27px);
+    }
+  }
+}
+
+#top{
+  height: 100px;
+  .logo{
+    @include setMargin(left,45px);
+    @include setfloat(left);
+  }
+  .search{
+    width: 430px;
+    height: 30px;
+    @include setBorder(5px,#E9E9E9);
+    @include setfloat(left);
+    @include setMarginF(22px,0px,0px,46px);
+    input{
+      @include setfloat(left);
+    }
+    .txt{
+      width: 348px;
+      height: 28px;
+      @include setBorder(1px,#AE0001);
+    }
+    .btn{
+      width: 80px;
+      height: 30px;
+      background:#C7012C;
+      @include setBorder(0,#AE0001);
+      @include setFont(14px,bold,#fff);
+    }
+  }
+  .redpacket{
+    @include setMargin(right,35px);
+    @include setfloat(right);
+  }
+}
+#nav{
+  @include setHeight(40px);
+  @extend %marginAuto;
+  width:1200px;
+  background: #C7012C;
+  border-radius: 5px 0;
+  clear: both;
+  position: relative;
+  .category{
+    @include setFont(16px,normal,#fff);
+    @include setPadding(left,25px);
+    @include setfloat(left);
+    @include setHeight(40px);
+    position: relative;
+    width: 185px;
+    cursor: pointer;
+    span{
+      position: absolute;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      overflow: hidden;
+      background: $span;
+      top: 12px;
+      right: 15px;
+    }
+  }
+  .mainnav{
+    width: 558px;
+    height: 40px;
+    @include setfloat(left);
+    a{
+      @include setBorderdir(left,1px,#fff);
+      @include setPadding(left,10px);
+      color: $colorWhite;
+      line-height: 30px;
+      position: relative;
+      img{
+        position: absolute;
+        top: -18px;
+        right: -5px;
+      }
+    }
+    .zhen{
+      @extend %fontWight;
+      @include setPadding(top,4px);
+      @include setPadding(left,25px);
+      top: -4px;
+      display: inline-block;
+      width: 90px;
+      height: 40px;
+      background:$zhen;
+      color: #FF0;
+      border: none;
+    }
+  }
+  .shopcar{
+    width: 196px;
+    @include setHeight(27px);
+    @include setfloat(right);
+    @include setMargin(right,11px);
+    li{
+      @include setMargin(top,6px);
+      @include setfloat(left);
+      font-size: $middleSize;
+    }
+    .count{
+      @include seteveRadius(5px,0,0,5px);
+      width: 134px;
+      @include setHeight(27px);
+      text-align: center;
+      background:#FFEEDE url("../images/index/shopcar.jpg") no-repeat left 13px center;
+      a{
+        color: $color;
+        span{
+          @extend %fontWight;
+          color: #C8012C;
+        }
+      }
+    }
+    .account{
+      @include seteveRadius(0,5px,5px,0);
+      @include setHeight(27px);
+      @include setPadding(left,5px);
+      width: 57px;
+      background: #ffbc22;
+      a{
+        color:$colorWhite;
+      }
+    }
+  }
+  .notice{
+    position: absolute;
+    top:50px;
+    right: 35px;
+    width: 228px;
+    height: 480px;
+    h3{
+      @include setBorderdir(bottom,1px,#E0E0E0);
+      @include setHeight(39px);
+      background: #fff;
+      color: $colorPink;
+      text-align: center;
+      img{
+        @extend %img;
+      }
+    }
+    .list,.mocailist{
+      @include setPaddingTol(20px);
+      background: $noticebg;
+      height: 120px;
+      li{
+        font-size: $normalSize;
+        @include setHeight(20px);
+        a{
+          color: $color;
+        }
+      }
+    }
+    .imgnotice{
+      display: inline-block;
+      height: 220px;
+      float: left;
+    }
+    .mocailist{
+      @include setPaddingF(10px,20px,10px,20px);
+      height: 40px;
+      clear: both;
+    }
+  }
+}
+
+#banner{
+  @include setMargin(top,10px);
+  height: 480px;
+  img{
+    width: 1267px;
+    height: 480px;
+  }
+}
+
+#content{
+  background: $mainbg;
+}
+.main{
+  @extend %marginAuto;
+  width: 1200px;
+  height: auto;
+}
+.newPro{
+  height: 914px;
+}
+.newPro{
+  @include setfloat(left);
+  width: 855px;
+  height: 914px;
+}
+.clearWare{
+  @include setfloat(right);
+  width: 333px;
+  height: 914px;
+}
+.nPtitle{
+  @include setBorderdir(bottom,2px,#CDCDCD);
+  height: 41px;
+  position: relative;
+  .font{
+    @include setFont(22px,bold,#714A1F);
+    @include setMargin(left,-72px);
+    position: absolute;
+    left: 50%;
+    top:18px;
+    width:145px;
+    height: 60px;
+    text-align: center;
+    background: $mainbg;
+    p{
+      @include setFont(12px,normal,#999);
+    }
+  }
+}
+
+.nPlink{
+  @include setBorder(1px,#DDDDDD);
+  @include setBorderdir(top,0px,#fff);
+  @include setMargin(top,16px);
+  height: 854px;
+  img{
+    @include setMargin(top,10px);
+  }
+  .img1{
+    @include setMargin(top,30px);
+  }
+}
+
+.clearWare{
+  @include setfloat(right);
+  .nPtitle{
+    @include setHeight(41px);
+  }
+  .clear{
+    @include setMargin(top,46px);
+  }
+  .release{
+    @include setHeight(20px);
+    .font{
+      height: 30px;
+      top: 8px;
+    }
+  }
+  .first{
+    @include setMargin(top,25px);
+  }
+}
+
+.groupBuy{
+  height: 1244px;
+  clear: both;
+  .gBtitle{
+    @include setBorderdir(bottom,2px,#CDCDCD);
+    height: 26px;
+    position: relative;
+    .font{
+      @include setFont(22px,bold,#714A1F);
+      @include setMargin(left,-64px);
+      width: 128px;
+      height: 40px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top:5px;
+      background: $mainbg;
+      p{
+        @include setFont(12px,normal,#999);
+      }
+    }
+  }
+}
+
+.commodity{
+  width: 1218px;
+  .comm{
+    @include setfloat(left);
+    @include setMarginF(25px,15px,0,0);
+    width: 390px;
+    height: 376px;
+    img{
+      @include setfloat(left);
+    }
+    .intro{
+      @include setPaddingF(10px,0,0,20px);
+      height: 110px;
+      background: $commbg;
+      clear: both;
+      p{
+        @include setHeight(25px);
+        font-size: $middleSize;
+        color: #656565;
+      }
+      .bold{
+        @extend %fontWight;
+        color: #323232;
+      }
+    }
+  }
+}
+.must{
+  height: 50px;
+  img{
+    @include setMargin(top,20px);
+  }
+  .price{
+    @include setfloat(right);
+    @include setMarginF(10px,10px,0,0);
+    width: 140px;
+    .priceLeft{
+      @include setfloat(left);
+      @include setFont(14px,normal,#636363);
+      width: 54px;
+      font-size: $bigSize;
+      del{
+        font-size: $normalSize;
+      }
+    }
+    .priceRight{
+      @include setfloat(right);
+      @include setFont(20px,bolder,#E83433);
+        span{
+          @include setFont(40px,bolder,#E83433);
+        }
+      }
+  }
+}
+
+.moreShop{
+  @include setHeight(58px);
+  @include setFont(30px,bolder,#fff);
+  @include setMarginF(35px,0,12px,0);
+  background: $morebg;
+  text-align: center;
+  cursor: pointer;
+  img{
+    @extend %img;
+  }
+}
+
+#footer{
+  height: 333px;
+  background: url("../images/index/bottomBor.jpg") no-repeat top center;
+  ul{
+    @include setfloat(left);
+    @include setBorderdir(left,1px,#DDDDDD);
+    @include setPadding(left,10px);
+    @include setMargin(top,72px);
+    width: 138px;
+    font-size: $normalSize;
+    li{
+      @include setHeight(20px);
+      color: #999999;
+    }
+    .guide{
+      color: #000;
+    }
+  }
+  .hotline{
+    width: 250px;
+    height: 133px;
+    @include setPaddingF(20px,0,0,20px);
+    dt,dd{
+      @include setfloat(left);
+    }
+  }
+}
