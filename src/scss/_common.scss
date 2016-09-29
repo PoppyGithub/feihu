@@ -1,0 +1,140 @@
+#container{
+  width: 1267px;
+  height: auto;
+  margin: 0 auto;
+}
+
+//header
+#header{
+  @include setBorderdir(bottom,1px,#CCCCCC);
+  @include setHeight(29px);
+  .headleft{
+    @include setfloat(left);
+    @include setMargin(left,30px);
+    li{
+      @include setfloat(left);
+      @include setMargin(right,10px);
+      font-size: $normalSize;
+      a{
+        @include link-colors(#0066FF,#AE0001);
+      }
+    }
+  }
+  .headright{
+    @include setfloat(right);
+    @include setMargin(right,34px);
+    li{
+      @include setfloat(left);
+      @include setMargin(right,5px);
+      font-size: $normalSize;
+      color: $color;
+      a{
+        color: $color;
+      }
+    }
+    .myaccount{
+      @include setMargin(right,43px);
+    }
+    .phone{
+      @extend %fontWight;
+      @include setMargin(left,27px);
+    }
+    .internav{
+      @include setPaddingF(0,5px,0,5px);
+      @include setPos(relative);
+      ul{
+        @include setPos(absolute);
+        @include setPadding(left,5px);
+        @include setBorder(1px,#CDCDCD);
+        @include setBorderdir(top,1px,#fff);
+        @include setDis(none);
+        width: 62px;
+        left: -1px;
+        top:29px;
+        background: $commbg;
+        li{
+          @include setHeight(25px);
+        }
+        a{
+          @include link-colors(#666666,#B60000);
+        }
+      }
+    }
+  }
+}
+.internavBor{
+  @include setBorderdir(left,1px,#CDCDCD);
+  @include setBorderdir(right,1px,#CDCDCD);
+}
+
+
+
+//footer
+#footer{
+  height: 333px;
+  background: url("../images/index/bottomBor.jpg") no-repeat top center;
+  position: relative;
+  ul{
+    @include setfloat(left);
+    @include setBorderdir(left,1px,#DDDDDD);
+    @include setPadding(left,10px);
+    @include setMargin(top,72px);
+    width: 138px;
+    font-size: $normalSize;
+    li{
+      @include setHeight(20px);
+      color: #999999;
+      img{
+        @extend %img;
+        @include setMargin(left,5px);
+      }
+    }
+    .guide{
+      @include setHeight(30px);
+      color: #000;
+    }
+  }
+  .hotline{
+    @include setPaddingF(20px,0,0,20px);
+    @include setMargin(left,175px);
+    @include setBorderdir(left,0,#fff);
+    width: 250px;
+    height: 133px;
+    li{
+      @include setHeight(25px);
+    }
+    dt,dd{
+      @include setfloat(left);
+      img{
+        @include setPaddingF(0,24px,0,12px);
+      }
+    }
+    span{
+      font-size: $bigSize;
+    }
+    dd{
+      @include setHeight(25px);
+      width: 140px;
+      text-align: right;
+      span{
+        font-size:$normalSize;
+        color: #FF6600;
+      }
+    }
+  }
+  p{
+    @include setMargin(left,150px);
+    @include setHeight(25px);
+    font-size: $normalSize;
+    color: #999999;
+    a{
+      @include setPaddingF(0,5px,0,5px);
+      color: $color;
+    }
+  }
+  .incom{
+    position: absolute;
+    right: 140px;
+    bottom:15px;
+  }
+}

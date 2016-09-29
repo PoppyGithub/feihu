@@ -1,0 +1,83 @@
+@mixin setfloat($direction) {
+  float: $direction;
+}
+
+@mixin setBorder($width,$color) {
+  border: $width solid $color;
+}
+
+@mixin setBorderdir($direction,$width,$color) {
+  border-#{$direction}: $width solid $color;
+}
+
+@mixin setPadding($direction,$value) {
+  padding-#{$direction}:$value;
+}
+
+@mixin setMargin($direction,$value) {
+  margin-#{$direction}:$value;
+}
+
+@mixin setMarginF($value1,$value2,$value3,$value4) {
+  margin:$value1 $value2 $value3 $value4;
+}
+
+@mixin setMarginTwo($value1,$value2) {
+  margin:$value1 $value2;
+}
+
+@mixin setPaddingF($value1,$value2,$value3,$value4) {
+  padding:$value1 $value2 $value3 $value4;
+}
+@mixin setPaddingTol($value) {
+  padding:$value;
+}
+
+@mixin setPaddingTwo($value1,$value2) {
+  padding:$value1 $value2;
+}
+
+@mixin setHeight($height){
+  height:$height;
+  line-height:$height;
+}
+
+@mixin setFont($size,$weight,$color){
+  font-size:$size;
+  font-weight:$weight;
+  color:$color;
+}
+
+@mixin setRadius($value){
+  border-radius: $value;
+}
+
+@mixin seteveRadius($value1,$value2,$value3,$value4){
+  border-radius: $value1 $value2 $value3 $value4;
+}
+
+@mixin link-colors($normal,$hover){
+  color: $normal;
+  &:hover { color: $hover};
+}
+
+@mixin link-bgcolors($hover){
+  &:hover { background-color: $hover};
+}
+
+@mixin setPos($value){
+  position: $value;
+}
+
+@mixin setDis($value){
+  display: $value;
+}
+
+@mixin setOpacity($value){
+  opacity: $value;
+  filter:alpha(opacity = $value*100);
+}
+
+@mixin setTextAlign($value){
+  text-align: $value;
+}

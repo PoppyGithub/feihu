@@ -1,0 +1,79 @@
+#warp{
+  @extend %marginAuto;
+  width: 1000px;
+}
+#regMain{
+  min-height: 780px;
+  background: url("../images/register/reg_bg.jpg") no-repeat center top;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+.regbox{
+  @include setBorder(10px,#B0B0B0);
+  @include setMarginTwo(60px,auto);
+  @include setPaddingTol(20px);
+  width: 860px;
+  height: 642px;
+  background: $commbg;
+}
+.regPhone{
+  @include setfloat(left);
+  width: 580px;
+  height: 520px;
+  background: #F6B12E;
+  p{
+    @include setMargin(top,10px);
+    @include setMargin(left,30px);
+    width: 420px;
+    height: 42px;
+    label{
+      @include setTextAlign(right);
+      @include setHeight(42px);
+      display: inline-block;
+      width: 100px;
+      span{
+        color: $morebg;
+      }
+    }
+    input{
+      width: 300px;
+      height: 35px;
+    }
+  }
+  button{
+    @include setMarginF(10px,0,0,85px);
+    @include setRadius(5px);
+    @include setFont(16px,bold,#fff);
+    width: 400px;
+    height: 40px;
+    background: $regtitlecolor;
+    border: none;
+    cursor: pointer;
+  }
+}
+.other{
+  @include setBorderdir(left,1px,#E6E6E6);
+  @include setfloat(right);
+  width: 260px;
+  height: 520px;
+  background: #ff9;
+}
+.rPhonetitle{
+  @include setBorderdir(bottom,1px,#E6E6E6);
+  height: 40px;
+  h3{
+    @include setBorderdir(bottom,1px,#EA5A5D);
+    @include setTextAlign(center);
+    font-weight: normal;
+    width: 290px;
+    height: 40px;
+    color: $regtitlecolor;
+  }
+}
+.code{
+  @include setBorder(1px,#ccc);
+  @include setMargin(top,10px);
+  @include setMargin(left,137px);
+  width: 80px;
+  height: 35px;
+}

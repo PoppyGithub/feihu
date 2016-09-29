@@ -1,42 +1,3 @@
-#container{
-  width: 1267px;
-  height: auto;
-  margin: 0 auto;
-}
-
-#header{
-  @include setBorderdir(bottom,1px,#CCCCCC);
-  @include setHeight(29px);
-  .headleft{
-    @include setfloat(left);
-    @include setMargin(left,30px);
-    li{
-      @include setfloat(left);
-      @include setMargin(right,10px);
-      font-size: $normalSize;
-    }
-  }
-  .headright{
-    @include setfloat(right);
-    @include setMargin(right,34px);
-    li{
-      @include setfloat(left);
-      @include setMargin(right,5px);
-      font-size: $normalSize;
-      color: $color;
-      a{
-        color: $color;
-      }
-    }
-    .myaccount{
-      @include setMargin(right,43px);
-    }
-    .phone{
-      @extend %fontWight;
-      @include setMargin(left,27px);
-    }
-  }
-}
 
 #top{
   height: 100px;
@@ -105,6 +66,7 @@
     a{
       @include setBorderdir(left,1px,#fff);
       @include setPadding(left,10px);
+      @include link-colors(#fff,#F6B12E);
       color: $colorWhite;
       line-height: 30px;
       position: relative;
@@ -118,12 +80,13 @@
       @extend %fontWight;
       @include setPadding(top,4px);
       @include setPadding(left,25px);
+      @include link-colors(#ff0,#ff0);
       top: -4px;
       display: inline-block;
       width: 90px;
       height: 40px;
       background:$zhen;
-      color: #FF0;
+
       border: none;
     }
   }
@@ -165,7 +128,8 @@
   .notice{
     position: absolute;
     top:50px;
-    right: 35px;
+    right: 15px;
+    z-index: 10;
     width: 228px;
     height: 480px;
     h3{
@@ -201,14 +165,116 @@
       clear: both;
     }
   }
+  .allList{
+    width: 190px;
+    background: #000;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50px;
+    li{
+      @include setHeight(34px);
+      @include setFont(14px,bold,#fff);
+      @include link-bgcolors(#D92020);
+      @include setPadding(left,35px);
+      @include setPos(relative);
+      cursor: pointer;
+      img{
+        vertical-align: text-top;
+      }
+      span{
+        @include setMargin(left,10px);
+      }
+    }
+  }
 }
+
+.liveEle{
+  @include setPos(absolute);
+  @include setDis(none);
+  font-size: $normalSize;
+  left: 190px;
+  top:0;
+  width: 760px;
+  min-height: 70px;
+  background: $noticebg;
+  .lifeleft{
+    width: 100px;
+    min-height: 70px;
+    text-align: right;
+    @include setfloat(left);
+    @include setMargin(right,20px);
+    span{
+      @include setPadding(right,20px);
+      color: #535353;
+    }
+    img{
+      @include setPadding(top,2px);
+    }
+  }
+  .electric{
+    width: 630px;
+    min-height: 70px;
+    @include setfloat(left);
+    @include setFont(12px,normal,#E7E7E7);
+    a{
+      @include setHeight(30px);
+      @include setPaddingTwo(0,5px);
+      color: #7C7070;
+      display: inline-block;
+      font-weight: normal;
+    }
+  }
+}
+
 
 #banner{
   @include setMargin(top,10px);
+  @include setPos(relative);
   height: 480px;
   img{
     width: 1267px;
     height: 480px;
+    position: absolute;
+    @include setDis(none);
+  }
+  .current{
+    @include setDis(block);
+  }
+  ul{
+    @include setPos(absolute);
+    left: 500px;
+    bottom: 20px;
+    li{
+      @include setfloat(left);
+      @include setMargin(right,10px);
+      @include setOpacity(0.4);
+      width: 42px;
+      height: 11px;
+      background: #000;
+      cursor: pointer;
+    }
+    .active{
+      background: #F13C06;
+    }
+  }
+  .prev,.next{
+    @include setMargin(top,-20px);
+    @include setOpacity(0.5);
+    @include setDis(none);
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    z-index: 111;
+  }
+  .prev{
+    background: #000 url(../images/index/slider-arrow.png) no-repeat -126px -137px;
+    left: 225px;
+  }
+  .next{
+    background: #000 url(../images/index/slider-arrow.png) no-repeat -7px -137px;
+    right:277px;
   }
 }
 
@@ -266,6 +332,11 @@
   }
 }
 
+.nPlinkHover{
+  opacity: 0.7;
+  filter:alpha(opacity = 70);
+}
+
 .clearWare{
   @include setfloat(right);
   .nPtitle{
@@ -315,8 +386,9 @@
   .comm{
     @include setfloat(left);
     @include setMarginF(25px,15px,0,0);
-    width: 390px;
-    height: 376px;
+    @include setBorder(1px,#ccc);
+    width: 388px;
+    height: 387px;
     img{
       @include setfloat(left);
     }
@@ -341,6 +413,7 @@
   height: 50px;
   img{
     @include setMargin(top,20px);
+    cursor: pointer;
   }
   .price{
     @include setfloat(right);
@@ -377,30 +450,3 @@
   }
 }
 
-#footer{
-  height: 333px;
-  background: url("../images/index/bottomBor.jpg") no-repeat top center;
-  ul{
-    @include setfloat(left);
-    @include setBorderdir(left,1px,#DDDDDD);
-    @include setPadding(left,10px);
-    @include setMargin(top,72px);
-    width: 138px;
-    font-size: $normalSize;
-    li{
-      @include setHeight(20px);
-      color: #999999;
-    }
-    .guide{
-      color: #000;
-    }
-  }
-  .hotline{
-    width: 250px;
-    height: 133px;
-    @include setPaddingF(20px,0,0,20px);
-    dt,dd{
-      @include setfloat(left);
-    }
-  }
-}
