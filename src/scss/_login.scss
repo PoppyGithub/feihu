@@ -1,0 +1,59 @@
+#warp{
+  @extend %marginAuto;
+  width: 1000px;
+  height: 80px;
+}
+.tagger{
+  @include setfloat(left);
+}
+dl{
+  @include setMargin(top,20px);
+  @include setfloat(right);
+  width: 310px;
+  dt,dd{
+    @include setfloat(left);
+  }
+  dt{
+    img{
+      @include setMargin(right,10px);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  dd{
+    @include setFont(12px,600,#AAAAAA);
+    @include setHeight(20px);
+    letter-spacing: 2px;
+  }
+}
+
+#loginMain{
+  height: 449px;
+  background: url("../images/login/1.jpg") no-repeat center 0;
+}
+.login_mode{
+  @include setfloat(right);
+  @include setMarginTwo(20px,130px);
+  @include setPaddingTol(20px);
+  width: 352px;
+  height:369px;
+  background: #fff;
+  border-radius: 5px;
+}
+.tab_nav{
+  @include setHeight(40px);
+  width: 352px;
+  li{
+    @include setfloat(left);
+    @include setHeight(40px);
+    @include setFont(20px,normal,#909090);
+    @include setBorderdir(bottom,2px,#909090);
+    text-align: center;
+    width: 176px;
+  }
+  .active{
+    @include setBorderdir(bottom,2px,#E75A5D);
+    color: #E75A5D;
+  }
+}

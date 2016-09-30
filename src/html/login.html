@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>飞虎乐购-用户注册</title>
-    <link rel="stylesheet" href="../css/registers.css" type="text/css">
+    <title>飞虎乐购-用户登录</title>
+    <link rel="stylesheet" href="../css/login.css" type="text/css">
     <script src="../js/lib/jquery-1.8.3.js"></script>
     <script src="../js/lib/cookie.js"></script>
     <script src="../js/register.js"></script>
@@ -33,69 +33,19 @@
         </ul>
     </div>
     <div id="warp">
-        <img src="../images/register/logo.jpg" alt="">
+        <img src="../images/register/logo.jpg" alt="" class="tagger">
+        <dl>
+            <dt><img src="../images/login/good.jpg"></dt>
+            <dd>您好，欢迎来到飞虎乐购</dd>
+            <dd>已注册的会员请登录，或立即注册</dd>
+        </dl>
     </div>
-    <div id="regMain">
-        <div class="regbox">
-            <div class="regPhone">
-                <div class="rPhonetitle">
-                    <h3>用户注册</h3>
-                </div>
-                <p>
-                    <label for=""><span>*</span>用户名:</label>
-                    <input type="text" class="usename">
-                    <span class="hint"></span>
-                </p>
-                <p>
-                    <label for=""><span>*</span>密码:</label>
-                    <input type="password" class="pwd">
-                    <span class="hint"></span>
-                </p>
-                <p>
-                    <label for=""><span>*</span>确认密码:</label>
-                    <input type="password" class="pwdSure">
-                    <span class="hint"></span>
-                </p>
-                <p>
-                    <label for=""><span>*</span>邮箱:</label>
-                    <input type="text" class="email">
-                    <span class="hint"></span>
-                </p>
-                <p>
-                    <label for="">活动代码:</label>
-                    <input type="text" class="activeCode">
-                    <span class="hint"></span>
-                </p>
-                <p>
-                    <label for="">推荐人:</label>
-                    <input type="text">
-                </p>
-                <p>
-                    <label for=""><span>*</span>验证码:</label>
-                    <input type="text" class="authCode">
-                    <span class="hint"></span>
-                </p>
-                <div class="code"></div>
-                <button class="btn" disabled = "disabled">提 交 注 册</button>
-            </div>
-            <div class="other">
-                <div class="apiLogin">
-                    <h4>使用合作网站账号直接登录</h4>
-                    <a href="#" class="qq"></a>
-                    <a href="#" class="weixin"></a>
-                </div>
-               <div class="register_after">
-                   <h4>注册之后您可以</h4>
-                   <ul>
-                       <li><span  class="ico01"></span>购买商品支付订单</li>
-                       <li><span  class="ico02"></span>收藏商品关注店铺</li>
-                       <li><span  class="ico03"></span>安全交易诚信无忧</li>
-                       <li><span  class="ico04"></span>积分获取优惠购物</li>
-                       <li><span  class="ico05"></span>会员等级享受特权</li>
-                       <li><span  class="ico06"></span>评价晒单站外分享</li>
-                   </ul>
-               </div>
-            </div>
+    <div id="loginMain">
+        <div class="login_mode">
+            <ul class="tab_nav">
+                <li class="active">用户登录</li>
+                <li>手机验证码登录</li>
+            </ul>
         </div>
     </div>
 
