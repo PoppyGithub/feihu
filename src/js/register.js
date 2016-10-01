@@ -80,7 +80,7 @@ $(function() {
             var ms = 24 * 60 * 60 * 1000 * num + d.getTime();
             return new Date(ms);
         }
-        $.cookie.setAll($(".usename").val(),{"useName":$(".usename").val(),"pwd":$(".pwd").val()},_getDate(7));
+        $.cookie.setAll($(".usename").val(),{"useName":$(".usename").val(),"pwd":$(".pwd").val()},_getDate(7),"/");
     })
 
     console.log($.cookie.getAll("zhangsan").pwd);

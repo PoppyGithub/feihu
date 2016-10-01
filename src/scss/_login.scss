@@ -51,9 +51,118 @@ dl{
     @include setBorderdir(bottom,2px,#909090);
     text-align: center;
     width: 176px;
+    cursor: pointer;
   }
   .active{
     @include setBorderdir(bottom,2px,#E75A5D);
     color: #E75A5D;
+  }
+}
+.login_form{
+  @include setMargin(top,30px);
+  width: 352px;
+  height: 207px;
+  input{
+    @include setPadding(left,10px);
+    width: 340px;
+    height: 36px;
+  }
+  p{
+    @include setHeight(30px);
+    font-size: $normalSize;
+    color: $color;
+  }
+}
+.handle{
+  @include setHeight(20px);
+  @include setMarginTwo(15px,0);
+  width: 352px;
+  .auto{
+    @include setfloat(left);
+    font-size: $normalSize;
+    color: $colorGray;
+    .checkbox{
+      @include setMargin(right,5px);
+      @extend %img;
+      width: 13px;
+      height: 13px;
+    }
+  }
+  .forget{
+    @include setfloat(right);
+    font-size: $normalSize;
+    color: $colorRed;
+  }
+}
+.login_btn{
+  @include setFont(14px,bold,#fff);
+  width: 352px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background: $logbtnbg;
+  cursor: pointer;
+}
+.login_api{
+  margin-top: 20px;
+  @extend %marginAuto;
+  width: 340px;
+  height: 62px;
+  h4{
+    @include setHeight(20px);
+    @include setMargin(bottom,10px);
+    font-size: $normalSize;
+  }
+  a{
+    @include setFont(14px,600,#AAAAAA);
+  }
+  i{
+    @extend %img;
+    @include setMargin(right,5px);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/login/login_pic.png) no-repeat;
+  }
+  .wx{
+    i{
+      background-position: -64px 0;
+    }
+  }
+}
+.login_phone{
+  @include setMargin(top,30px);
+  position: relative;
+  width: 352px;
+  height: 207px;
+  display: none;
+  input{
+    @include setPadding(left,10px);
+    @include setMargin(bottom,15px);
+    width: 340px;
+    height: 36px;
+  }
+  p{
+    @include setHeight(35px);
+    @include setMargin(bottom,15px);
+    @include setFont(18px,normal,red);
+    border: 1px solid #ccc;
+    width: 80px;
+    font-size: $normalSize;
+    text-align: center;
+  }
+  .hint,.hintT{
+    @include setHeight(40px);
+    @include setFont(12px,normal,red);
+    width: 150px;
+    position: absolute;
+  }
+  .hint{
+    right: 0;
+    top: 0;
+  }
+  .hintT{
+    right: 0;
+    top: 55px;
   }
 }

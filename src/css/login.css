@@ -19,11 +19,11 @@ img {
   font-weight: bold;
 }
 
-#footer ul li img {
+#footer ul li img, .handle .auto .checkbox, .login_api i {
   vertical-align: middle;
 }
 
-#warp {
+#warp, .login_api {
   margin: 0 auto;
 }
 
@@ -250,10 +250,132 @@ dl dd {
   border-bottom: 2px solid #909090;
   text-align: center;
   width: 176px;
+  cursor: pointer;
 }
 .tab_nav .active {
   border-bottom: 2px solid #E75A5D;
   color: #E75A5D;
+}
+
+.login_form {
+  margin-top: 30px;
+  width: 352px;
+  height: 207px;
+}
+.login_form input {
+  padding-left: 10px;
+  width: 340px;
+  height: 36px;
+}
+.login_form p {
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #666666;
+}
+
+.handle {
+  height: 20px;
+  line-height: 20px;
+  margin: 15px 0;
+  width: 352px;
+}
+.handle .auto {
+  float: left;
+  font-size: 12px;
+  color: #999999;
+}
+.handle .auto .checkbox {
+  margin-right: 5px;
+  width: 13px;
+  height: 13px;
+}
+.handle .forget {
+  float: right;
+  font-size: 12px;
+  color: #E75A5D;
+}
+
+.login_btn {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  width: 352px;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background: #E75A5D;
+  cursor: pointer;
+}
+
+.login_api {
+  margin-top: 20px;
+  width: 340px;
+  height: 62px;
+}
+.login_api h4 {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.login_api a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #AAAAAA;
+}
+.login_api i {
+  margin-right: 5px;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(../images/login/login_pic.png) no-repeat;
+}
+.login_api .wx i {
+  background-position: -64px 0;
+}
+
+.login_phone {
+  margin-top: 30px;
+  position: relative;
+  width: 352px;
+  height: 207px;
+  display: none;
+}
+.login_phone input {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  width: 340px;
+  height: 36px;
+}
+.login_phone p {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: normal;
+  color: red;
+  border: 1px solid #ccc;
+  width: 80px;
+  font-size: 12px;
+  text-align: center;
+}
+.login_phone .hint, .login_phone .hintT {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: normal;
+  color: red;
+  width: 150px;
+  position: absolute;
+}
+.login_phone .hint {
+  right: 0;
+  top: 0;
+}
+.login_phone .hintT {
+  right: 0;
+  top: 55px;
 }
 
 /*# sourceMappingURL=login.css.map */

@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>飞虎乐购-用户登录</title>
-    <link rel="stylesheet" href="../css/login.css" type="text/css">
+    <title>飞虎乐购-商品详情</title>
+    <link rel="stylesheet" href="../css/detail.css" type="text/css">
     <script src="../js/lib/jquery-1.8.3.js"></script>
-    <script src="../js/lib/cookie.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/detail.js"></script>
 </head>
 <body>
 <div id="container">
@@ -32,46 +31,56 @@
             <li class="phone">400 883 6900</li>
         </ul>
     </div>
-    <div id="warp">
-        <img src="../images/register/logo.jpg" alt="" class="tagger">
-        <dl>
-            <dt><img src="../images/login/good.jpg"></dt>
-            <dd>您好，欢迎来到飞虎乐购</dd>
-            <dd>已注册的会员请登录，或立即注册</dd>
-        </dl>
+    <div id="top">
+        <a href="#" class="logo"><img src="../images/index/logo.jpg" alt=""></a>
+        <div class="search">
+            <input type="text" class="txt">
+            <input type="button" value="搜 索" class="btn">
+        </div>
+        <a href="#" class="redpacket"><img src="../images/index/redpacket.jpg" alt=""></a>
     </div>
-    <div id="loginMain">
-        <div class="login_mode">
-            <ul class="tab_nav">
-                <li class="active">用户登录</li>
-                <li>手机验证码登录</li>
-            </ul>
-            <div class="login_form login_con">
-                <input type="text" placeholder="请输入用户名" class="usename">
-                <p>富士康员工首次登录用户名为工号,初始密码为身份证后六位。</p>
-                <input type="password" placeholder="请输入密码" class="pwd">
-                <div class="handle">
-                    <span class="auto"><input type="checkbox" class="checkbox">记住用户名和密码</span>
-                    <a href="#" class="forget">忘记密码?</a>
+    <div id="nav">
+        <div class="category">全部商品分类<span></span></div>
+        <div class="mainnav">
+            <a href="#" class="zhen">臻鼎摸彩</a>
+            <a href="#">首页</a>
+            <a href="#">奶粉专区<span><img src="../images/index/sl_header_new.gif"></span></a>
+            <a href="#">飞虎团购<span><img src="../images/index/sl_header_hot.gif"></span></a>
+        </div>
+        <ul class="shopcar">
+            <li class="count"><a href="#">购物车(<span>0</span>)</a></li>
+            <li class="account"><a href="#">去结算<img src="../images/index/pointRight.jpg"></a></li>
+        </ul>
+    </div>
+    <div id="detailMain">
+        <div class="wrapper">
+            <a href="#">限时抢购</a> >
+            <span>华美月饼&nbsp;金丽莎系列&nbsp;心意佳礼450g</span>
+        </div>
+        <div class="mainShow">
+            <div class="preview">
+                <div class="preview_big">
+                    <img src="../images/detail/month.jpg" alt="">
                 </div>
-                <button class="login_btn btnForm">登&nbsp;&nbsp;录</button>
+                <div class="preview_small">
+                    <div class="btn_left"></div>
+                    <div class="content">
+                        <ul>
+                            <li class="active"><img src="../images/detail/lh.jpg"></li>
+                            <li><img src="../images/detail/lh2.jpg"></li>
+                            <li><img src="../images/detail/hand.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="btn_right"></div>
+                </div>
             </div>
-            <div class="login_phone login_con">
-                <input type="text" placeholder="请输入手机号" class="phone">
-                <span class="hint"></span>
-                <input type="text" placeholder="请输入验证码" class="checkCode">
-                <span class="hintT"></span>
-                <p class="code"></p>
-                <button class="login_btn btnPhone">登&nbsp;&nbsp;录</button>
-            </div>
-            <div class="login_api">
-                <h4>使用合作网站账号登录</h4>
-                <a href="#" class="qq"><i></i>QQ账号登录</a>
-                <a href="#" class="wx"><i></i>微信账号登录</a>
+            <div class="summary">
+                <div class="summary_title">
+                    <p>华美月饼&nbsp;金丽莎系列&nbsp;心意佳礼450g</p>
+                </div>
             </div>
         </div>
     </div>
-
     <div id="footer">
         <div class="link clearfix">
             <ul class="hotline">

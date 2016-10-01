@@ -1,0 +1,264 @@
+#top{
+  height: 100px;
+  .logo{
+    @include setMargin(left,45px);
+    @include setfloat(left);
+  }
+  .search{
+    width: 430px;
+    height: 30px;
+    @include setBorder(5px,#E9E9E9);
+    @include setfloat(left);
+    @include setMarginF(22px,0px,0px,46px);
+    input{
+      @include setfloat(left);
+    }
+    .txt{
+      width: 348px;
+      height: 28px;
+      @include setBorder(1px,#AE0001);
+    }
+    .btn{
+      width: 80px;
+      height: 30px;
+      background:#C7012C;
+      @include setBorder(0,#AE0001);
+      @include setFont(14px,bold,#fff);
+    }
+  }
+  .redpacket{
+    @include setMargin(right,35px);
+    @include setfloat(right);
+  }
+}
+
+#nav{
+  @include setHeight(40px);
+  @extend %marginAuto;
+  width:1200px;
+  background: #C7012C;
+  border-radius: 5px 0;
+  clear: both;
+  position: relative;
+  .category{
+    @include setFont(16px,normal,#fff);
+    @include setPadding(left,25px);
+    @include setfloat(left);
+    @include setHeight(40px);
+    position: relative;
+    width: 185px;
+    cursor: pointer;
+    span{
+      position: absolute;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      overflow: hidden;
+      background: $span;
+      top: 12px;
+      right: 15px;
+    }
+  }
+  .mainnav{
+    width: 558px;
+    height: 40px;
+    @include setfloat(left);
+    a{
+      @include setBorderdir(left,1px,#fff);
+      @include setPadding(left,10px);
+      @include link-colors(#fff,#F6B12E);
+      color: $colorWhite;
+      line-height: 30px;
+      position: relative;
+      img{
+        position: absolute;
+        top: -18px;
+        right: -5px;
+      }
+    }
+    .zhen{
+      @extend %fontWight;
+      @include setPadding(top,4px);
+      @include setPadding(left,25px);
+      @include link-colors(#ff0,#ff0);
+      top: -4px;
+      display: inline-block;
+      width: 90px;
+      height: 40px;
+      background:$zhen;
+
+      border: none;
+    }
+  }
+  .shopcar{
+    width: 196px;
+    @include setHeight(27px);
+    @include setfloat(right);
+    @include setMargin(right,11px);
+    li{
+      @include setMargin(top,6px);
+      @include setfloat(left);
+      font-size: $middleSize;
+    }
+    .count{
+      @include seteveRadius(5px,0,0,5px);
+      width: 134px;
+      @include setHeight(27px);
+      text-align: center;
+      background:#FFEEDE url("../images/index/shopcar.jpg") no-repeat left 13px center;
+      a{
+        color: $color;
+        span{
+          @extend %fontWight;
+          color: #C8012C;
+        }
+      }
+    }
+    .account{
+      @include seteveRadius(0,5px,5px,0);
+      @include setHeight(27px);
+      @include setPadding(left,5px);
+      width: 57px;
+      background: #ffbc22;
+      a{
+        color:$colorWhite;
+      }
+    }
+  }
+  .notice{
+    position: absolute;
+    top:50px;
+    right: 15px;
+    z-index: 10;
+    width: 228px;
+    height: 480px;
+    h3{
+      @include setBorderdir(bottom,1px,#E0E0E0);
+      @include setHeight(39px);
+      background: #fff;
+      color: $colorPink;
+      text-align: center;
+      img{
+        @extend %img;
+      }
+    }
+    .list,.mocailist{
+      @include setPaddingTol(20px);
+      background: $noticebg;
+      height: 120px;
+      li{
+        font-size: $normalSize;
+        @include setHeight(20px);
+        a{
+          color: $color;
+        }
+      }
+    }
+    .imgnotice{
+      display: inline-block;
+      height: 220px;
+      float: left;
+    }
+    .mocailist{
+      @include setPaddingF(10px,20px,10px,20px);
+      height: 40px;
+      clear: both;
+    }
+  }
+  .allList{
+    width: 190px;
+    background: #000;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 50px;
+    li{
+      @include setHeight(34px);
+      @include setFont(14px,bold,#fff);
+      @include link-bgcolors(#D92020);
+      @include setPadding(left,35px);
+      @include setPos(relative);
+      cursor: pointer;
+      img{
+        vertical-align: text-top;
+      }
+      span{
+        @include setMargin(left,10px);
+      }
+    }
+  }
+}
+
+#detailMain{
+  margin-top: 10px;
+  @extend %marginAuto;
+  @include setHeight(30px);
+  @include setFont(12px,normal,#999999);
+  @include setBorderdir(bottom,1px,#DDDDDD);
+  @include setPadding(left,10px);
+  width: 1190px;
+  height: auto;
+  a{
+    color: #666666;
+  }
+  .mainShow{
+    width: 1200px;
+    height: 423px;
+    .preview{
+      @include setfloat(left);
+      width: 302px;
+      height: 418px;
+    }
+    .summary{
+      @include setfloat(right);
+      width: 880px;
+      height: 419px;
+    }
+  }
+}
+.preview_big{
+  @include setPaddingTol(10px);
+  @include setBorder(1px,#CCCCCC);
+  width: 280px;
+  height: 280px;
+}
+.preview_small{
+  height: 69px;
+  @include setMargin(top,5px);
+  .btn_left,.btn_right{
+    @include setMarginTwo(25px,0);
+    overflow: hidden;
+    width: 10px;
+    height: 14px;
+  }
+  .content{
+    @include setfloat(left);
+    ul{
+      width: 280px;
+      overflow: hidden;
+    }
+    li{
+      @include setBorder(1px,#EAEAEA);
+      @include setfloat(left);
+      @include setPaddingTol(2px);
+      @include setMargin(left,5px);
+      width: 60px;
+      height: 60px;
+    }
+    .active{
+      @include setBorder(1px,red);
+    }
+  }
+  .btn_left{
+    @include setfloat(left);
+    background: url("../images/detail/vi_bg.png") no-repeat -80px 0;
+  }
+  .btn_right{
+    @include setfloat(right);
+    background: url("../images/detail/vi_bg.png") no-repeat -99px 0;
+  }
+}
+.summary_title{
+  @include setHeight(30px);
+  @include 
+}
