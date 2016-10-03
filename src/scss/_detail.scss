@@ -89,6 +89,9 @@
 
       border: none;
     }
+    .zhen:hover{
+      background: url("../images/detail/menu_bg2.PNG") no-repeat;
+    }
   }
   .shopcar{
     width: 196px;
@@ -198,11 +201,11 @@
   @include setPadding(left,10px);
   width: 1190px;
   height: auto;
-  a{
+  .qg{
     color: #666666;
   }
   .mainShow{
-    width: 1200px;
+    width: 1190px;
     height: 423px;
     .preview{
       @include setfloat(left);
@@ -211,7 +214,7 @@
     }
     .summary{
       @include setfloat(right);
-      width: 880px;
+      width: 870px;
       height: 419px;
     }
   }
@@ -221,6 +224,38 @@
   @include setBorder(1px,#CCCCCC);
   width: 280px;
   height: 280px;
+  position: relative;
+  .glass{
+    @include setBorder(1px,#FF9900);
+    display: none;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top:10px;
+    left:10px;
+    background-color:#fff;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    z-index:2;
+  }
+}
+.bigImg{
+  @include setBorder(1px,#FF9900);
+  display: none;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  position: absolute;
+  top:10px;
+  left: 312px;
+  z-index: 2;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 680px;
+    height: 680px;
+  }
 }
 .preview_small{
   height: 69px;
@@ -233,7 +268,14 @@
   }
   .content{
     @include setfloat(left);
+    width: 280px;
+    height: 66px;
+    overflow: hidden;
+    position: relative;
     ul{
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 280px;
       overflow: hidden;
     }
@@ -258,7 +300,434 @@
     background: url("../images/detail/vi_bg.png") no-repeat -99px 0;
   }
 }
+
+.preview_more{
+  @include setHeight(27px);
+  @include setMargin(top,10px);
+  .more{
+    @include setfloat(left);
+    color:#3366CC;
+  }
+  .share{
+    @include setfloat(right);
+    .weibo,.renren,.pgy,.xx{
+      background: url(../images/detail/ui_enjoy.jpg) no-repeat 0 0;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+    }
+    .renren{
+      background-position: 0 -16px;
+    }
+    .pgy{
+      background-position: 0 -32px;
+    }
+    .xx{
+      background-position: 0 -48px;
+    }
+  }
+}
+
 .summary_title{
+  p{
+    @include setFont(18px,bold,#000);
+    @include setPadding(left,10px);
+    border-bottom: 1px dotted #ccc;
+    height: 32px;
+    span{
+      font-weight: normal;
+    }
+  }
+}
+.summary_price{
+  @include setPadding(left,10px);
+  @include setPadding(top,10px);
+  position: relative;
+  height: 95px;
+  border-bottom: 1px dotted #ccc;
+  .price_cankao{
+    @include setHeight(26px);
+    del{
+      font-weight: bold;
+    }
+  }
+  .price_limit{
+    .qianggou{
+      span{
+        display: inline-block;
+        @include setHeight(18px);
+        width: 64px;
+        background: #c7012c;
+        color: #fff;
+      }
+      strong{
+        @include setFont(26px,bold,#c7012c);
+        letter-spacing: 2px;
+        b{
+          @include setMarginTwo(0,2px);
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .time{
+    @include setHeight(25px);
+    em{
+      color: #FF0000;
+      font-weight: normal;
+    }
+  }
+  .pro_num{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #999;
+  }
+}
+.summary_stock{
+  @include setPadding(left,10px);
+  @include setPadding(top,10px);
   @include setHeight(30px);
-  @include 
+}
+.lbl,.stock{
+  @include setfloat(left);
+}
+.stock{
+  @include setBorder(1px,#DDDDDD);
+  @include setPos(relative);
+  width: 66px;
+  height: 28px;
+  .stock_selected{
+    @include setHeight(28px);
+    @include setMargin(left,10px);
+  }
+  .icon{
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    overflow: hidden;
+    top: 8px;
+    right: 8px;
+    background: url(../images/detail/vi_bg.png) no-repeat -120px 0;
+  }
+}
+.stock_mc{
+  @include setPaddingTol(10px);
+  @include setPos(absolute);
+  background: #fff;
+  z-index: 1;
+  display: none;
+  border: 1px solid #7B470E;
+  width: 320px;
+  height: 210px;
+  dt,dd{
+    border-bottom: 1px dotted #ddd;
+  }
+  dd{
+    span{
+      @include setPadding(left,15px);
+      cursor: pointer;
+    }
+  }
+}
+.close{
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  float: right;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  padding: 0;
+  background: url(../images/detail/bg.png) -965px -747px no-repeat;
+  text-indent: -999em;
+  cursor: pointer;
+}
+.serve{
+  @include setHeight(28px);
+  @include setPadding(left,10px);
+  @include setMargin(top,5px);
+  span{
+    @include setMarginTwo(0px,3px);
+    color: #C7012C;
+  }
+}
+
+#detailMain{
+  .serve,.pro_comment{
+    a{
+      color: #3366CC;
+    }
+  }
+}
+
+.serve_intro{
+  @include setHeight(28px);
+  @include setPadding(left,10px);
+  @include setMargin(top,5px);
+  span{
+    @include setMarginTwo(0,5px);
+    color: #C7012C;
+  }
+}
+.pro_comment{
+  @include setHeight(30px);
+  @include setPadding(left,10px);
+  @include setMargin(top,5px);
+  span,div,a{
+    @include setfloat(left);
+  }
+  .star{
+    @include setMargin(top,7px);
+    vertical-align: middle;
+    width: 85px;
+    height: 16px;
+    overflow: hidden;
+    background: url(../images/detail/ui_psorce.png) no-repeat 0 -17px;
+  }
+}
+.choose{
+  @include setPaddingTol(15px);
+  @include setBorder(1px,#EEEEEE);
+  background: #F8F8F8;
+  width: 840px;
+  height: 100px;
+  border-radius: 5px;
+}
+.choose_amount{
+  @include setHeight(25px);
+  button{
+    width: 20px;
+    height: 20px;
+  }
+  input{
+    width: 52px;
+    height: 16px;
+    text-align: center;
+  }
+}
+.choose_btn{
+  @include setHeight(50px);
+  @include setMargin(top,20px);
+  .button,.addCart{
+    @include setFont(20px,500,#fff);
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+  }
+  .button{
+    background: #C81B1B url(../images/detail/vi_showmain_bg32.png) no-repeat 0 0;
+  }
+  .addCart{
+    @include setPadding(left,30px);
+    background: #C81B1B url(../images/detail/vi_showmain_bg32.png) no-repeat 0 -100px;
+  }
+  a{
+    @include setMargin(left,15px);
+    i{
+      @include setHeight(17px);
+      width: 17px;
+      display: inline-block;
+      background: url(../images/detail/vi_bg.png) no-repeat -100px -40px;
+      vertical-align: middle;
+    }
+    display: inline-block;
+  }
+}
+.argument{
+  width: 1190px;
+  height: auto;
+  overflow: hidden;
+}
+.colsub{
+  @include setfloat(left);
+  width: 230px;
+  height: 327px;
+}
+
+.xunbaoSort{
+  @include setPaddingTol(5px);
+  background: #F1F1F1;
+  height: 53px;
+  .sort{
+    @include setBorderStyle(1px,solid,#DEDEDE);
+    @include setPadding(top,10px);
+    @include setPadding(left,15px);
+    @include setFont(16px,bold,#C7012C);
+    width: 203px;
+    background: #fff;
+    height: 40px;
+    border-radius: 5px;
+  }
+}
+.relevant{
+  @include setPaddingTol(5px);
+  @include setMargin(top,5px);
+  background: #F1F1F1;
+  height: 73px;
+  .rele{
+    @include setBorderStyle(1px,solid,#DEDEDE);
+    @include setFont(16px,bold,#C7012C);
+    width: 218px;
+    background: #fff;
+    height: 70px;
+    border-radius: 5px;
+    h4{
+      @include setHeight(40px);
+      @include setPadding(left,15px);
+      @include setBorderdir(bottom,4px,#C7120C);
+      @include setMargin(top,10px);
+    }
+  }
+}
+.scan{
+  @include setPaddingTol(5px);
+  @include setMargin(top,5px);
+  background: #F1F1F1;
+  height: auto;
+  .scanMain{
+    @include setBorderStyle(1px,solid,#DEDEDE);
+    width: 218px;
+    background: #fff;
+    height: auto;
+    border-radius: 5px;
+    h4{
+      @include setHeight(40px);
+      @include setPadding(left,15px);
+      @include setPadding(right,5px);
+      @include setBorderdir(bottom,4px,#C7120C);
+      @include setFont(16px,bold,#C7012C);
+      a{
+        font-weight: normal;
+        @include setfloat(right);
+        @include setFont(12px,bold,#999999);
+      }
+    }
+    dl{
+      @include setMarginTwo(10px,10px);
+      overflow: hidden;
+      dt,dd{
+        @include setfloat(left);
+      }
+      dt{
+        @include setBorder(1px,#DDDDDD);
+        width: 77px;
+        height: 77px;
+      }
+      dd{
+        @include setMargin(left,10px);
+        @include setHeight(20px);
+        width: 105px;
+      }
+      .scanPrice{
+        @include setHeight(30px);
+        @include setFont(16px,bold,#C7012C);
+      }
+    }
+  }
+}
+.colmain{
+  @include setfloat(right);
+  width: 940px;
+  height: auto;
+}
+.tab_triggers{
+  @include setHeight(40px);
+  @include setBorderdir(bottom,3px,#C7012C);
+  li{
+    @include setfloat(left);
+    @include setHeight(39px);
+    @include setBorder(1px,#ccc);
+    @include setFont(14px,normal,#666666);
+    border-bottom: none;
+    margin-right: -1px;
+    background: #F6F6F6;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .current{
+    background: #C7012C;
+    color: #fff;
+  }
+}
+.proIntroduction{
+  img{
+    @include setMarginTwo(20px,100px);
+  }
+}
+.proIntro_abs{
+  @include setPadding(top,10px);
+  @include setPadding(bottom,10px);
+  border-bottom: 1px dotted #ccc;
+  td{
+    @include setHeight(21px);
+    width: 360px;
+    a{
+      color: #0066FF;
+    }
+  }
+  .lbl{
+    width: 120px;
+    text-align: right;
+  }
+}
+
+
+.norms{
+  display: none;
+  @include setMargin(top,10px);
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td{
+    border: 1px solid #DBDBDB;
+    color: #333333;
+  }
+  .tit,.smalltit{
+    width:120px;
+    text-align: center;
+  }
+  .bigtit{
+    @include setPadding(left,15px);
+    width: 710px;
+  }
+  .tit{
+    background:$tabbg ;
+  }
+  .smalltit{
+    background:$tabbg2;
+  }
+}
+
+.pack{
+  display: none;
+  .name{
+    @include setMarginTwo(10px,0);
+    @include setHeight(34px);
+    @include setPadding(left,15px);
+    color: #666666;
+  }
+  .statement{
+    @include setBorder(1px,#FFE9C4);
+    @include setPadding(left,15px);
+    @include setHeight(40px);
+    border-radius: 5px;
+    color: #FF9927;
+    b{
+      color: #FF9900;
+    }
+  }
+}
+.afterSale{
+  display: none;
+  @include setMarginTwo(10px,0);
+  @include setPadding(left,15px);
+  color: #666666;
+  p{
+    @include setHeight(25px);
+  }
 }

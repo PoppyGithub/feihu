@@ -6,6 +6,10 @@
   border: $width solid $color;
 }
 
+@mixin setBorderStyle($width,$value,$color) {
+  border: $width $value $color;
+}
+
 @mixin setBorderdir($direction,$width,$color) {
   border-#{$direction}: $width solid $color;
 }

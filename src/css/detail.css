@@ -1,74 +1,990 @@
-/*
-Error: Invalid CSS after "  @include": expected identifier, was "}"
-        on line 264 of _detail.scss
-        from line 6 of detail.scss
+* {
+  margin: 0;
+  padding: 0;
+}
 
-259:   }
-260: }
-261: .summary_title{
-262:   @include setHeight(30px);
-263:   @include 
-264: }
+li {
+  list-style: none;
+}
 
-Backtrace:
-_detail.scss:264
-detail.scss:6
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1125:in `expected'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1120:in `tok!'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:238:in `include_directive'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:222:in `special_directive'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:197:in `directive'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:312:in `to_tree'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `block in with_import'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:88:in `with_import'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-E:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/scss:13:in `<top (required)>'
-E:/Ruby23-x64/bin/scss:23:in `load'
-E:/Ruby23-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  @include\": expected identifier, was \"}\"\A         on line 264 of _detail.scss\A         from line 6 of detail.scss\A \A 259:   }\A 260: }\A 261: .summary_title{\A 262:   @include setHeight(30px);\A 263:   @include \A 264: }"; }
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+#header .headright .phone, #nav .mainnav .zhen, #nav .shopcar .count a span {
+  font-weight: bold;
+}
+
+#footer ul li img, #nav .notice h3 img {
+  vertical-align: middle;
+}
+
+#nav, #detailMain {
+  margin: 0 auto;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+#container {
+  width: 1267px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#header {
+  border-bottom: 1px solid #CCCCCC;
+  height: 29px;
+  line-height: 29px;
+}
+#header .headleft {
+  float: left;
+  margin-left: 30px;
+}
+#header .headleft li {
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#header .headleft li a {
+  color: #0066FF;
+}
+#header .headleft li a:hover {
+  color: #AE0001;
+}
+#header .headright {
+  float: right;
+  margin-right: 34px;
+}
+#header .headright li {
+  float: left;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #666666;
+}
+#header .headright li a {
+  color: #666666;
+}
+#header .headright .myaccount {
+  margin-right: 43px;
+}
+#header .headright .phone {
+  margin-left: 27px;
+}
+#header .headright .internav {
+  padding: 0 5px 0 5px;
+  position: relative;
+}
+#header .headright .internav ul {
+  position: absolute;
+  padding-left: 5px;
+  border: 1px solid #CDCDCD;
+  border-top: 1px solid #fff;
+  display: none;
+  width: 62px;
+  left: -1px;
+  top: 29px;
+  background: #fff;
+}
+#header .headright .internav ul li {
+  height: 25px;
+  line-height: 25px;
+}
+#header .headright .internav ul a {
+  color: #666666;
+}
+#header .headright .internav ul a:hover {
+  color: #B60000;
+}
+
+.internavBor {
+  border-left: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
+}
+
+#footer {
+  height: 333px;
+  background: url("../images/index/bottomBor.jpg") no-repeat top center;
+  position: relative;
+}
+#footer ul {
+  float: left;
+  border-left: 1px solid #DDDDDD;
+  padding-left: 10px;
+  margin-top: 72px;
+  width: 138px;
+  font-size: 12px;
+}
+#footer ul li {
+  height: 20px;
+  line-height: 20px;
+  color: #999999;
+}
+#footer ul li img {
+  margin-left: 5px;
+}
+#footer ul .guide {
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+}
+#footer .hotline {
+  padding: 20px 0 0 20px;
+  margin-left: 175px;
+  border-left: 0 solid #fff;
+  width: 250px;
+  height: 133px;
+}
+#footer .hotline li {
+  height: 25px;
+  line-height: 25px;
+}
+#footer .hotline dt, #footer .hotline dd {
+  float: left;
+}
+#footer .hotline dt img, #footer .hotline dd img {
+  padding: 0 24px 0 12px;
+}
+#footer .hotline span {
+  font-size: 18px;
+}
+#footer .hotline dd {
+  height: 25px;
+  line-height: 25px;
+  width: 140px;
+  text-align: right;
+}
+#footer .hotline dd span {
+  font-size: 12px;
+  color: #FF6600;
+}
+#footer p {
+  margin-left: 150px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #999999;
+}
+#footer p a {
+  padding: 0 5px 0 5px;
+  color: #666666;
+}
+#footer .incom {
+  position: absolute;
+  right: 140px;
+  bottom: 15px;
+}
+
+#top {
+  height: 100px;
+}
+#top .logo {
+  margin-left: 45px;
+  float: left;
+}
+#top .search {
+  width: 430px;
+  height: 30px;
+  border: 5px solid #E9E9E9;
+  float: left;
+  margin: 22px 0px 0px 46px;
+}
+#top .search input {
+  float: left;
+}
+#top .search .txt {
+  width: 348px;
+  height: 28px;
+  border: 1px solid #AE0001;
+}
+#top .search .btn {
+  width: 80px;
+  height: 30px;
+  background: #C7012C;
+  border: 0 solid #AE0001;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+#top .redpacket {
+  margin-right: 35px;
+  float: right;
+}
+
+#nav {
+  height: 40px;
+  line-height: 40px;
+  width: 1200px;
+  background: #C7012C;
+  border-radius: 5px 0;
+  clear: both;
+  position: relative;
+}
+#nav .category {
+  font-size: 16px;
+  font-weight: normal;
+  color: #fff;
+  padding-left: 25px;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  width: 185px;
+  cursor: pointer;
+}
+#nav .category span {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url("../images/index/sl_header_v2.png") no-repeat 0 0;
+  top: 12px;
+  right: 15px;
+}
+#nav .mainnav {
+  width: 558px;
+  height: 40px;
+  float: left;
+}
+#nav .mainnav a {
+  border-left: 1px solid #fff;
+  padding-left: 10px;
+  color: #fff;
+  color: #fff;
+  line-height: 30px;
+  position: relative;
+}
+#nav .mainnav a:hover {
+  color: #F6B12E;
+}
+#nav .mainnav a img {
+  position: absolute;
+  top: -18px;
+  right: -5px;
+}
+#nav .mainnav .zhen {
+  padding-top: 4px;
+  padding-left: 25px;
+  color: #ff0;
+  top: -4px;
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  background: url("../images/index/menu_bg.PNG") no-repeat;
+  border: none;
+}
+#nav .mainnav .zhen:hover {
+  color: #ff0;
+}
+#nav .mainnav .zhen:hover {
+  background: url("../images/detail/menu_bg2.PNG") no-repeat;
+}
+#nav .shopcar {
+  width: 196px;
+  height: 27px;
+  line-height: 27px;
+  float: right;
+  margin-right: 11px;
+}
+#nav .shopcar li {
+  margin-top: 6px;
+  float: left;
+  font-size: 14px;
+}
+#nav .shopcar .count {
+  border-radius: 5px 0 0 5px;
+  width: 134px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  background: #FFEEDE url("../images/index/shopcar.jpg") no-repeat left 13px center;
+}
+#nav .shopcar .count a {
+  color: #666666;
+}
+#nav .shopcar .count a span {
+  color: #C8012C;
+}
+#nav .shopcar .account {
+  border-radius: 0 5px 5px 0;
+  height: 27px;
+  line-height: 27px;
+  padding-left: 5px;
+  width: 57px;
+  background: #ffbc22;
+}
+#nav .shopcar .account a {
+  color: #fff;
+}
+#nav .notice {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  z-index: 10;
+  width: 228px;
+  height: 480px;
+}
+#nav .notice h3 {
+  border-bottom: 1px solid #E0E0E0;
+  height: 39px;
+  line-height: 39px;
+  background: #fff;
+  color: #C7012C;
+  text-align: center;
+}
+#nav .notice .list, #nav .notice .mocailist {
+  padding: 20px;
+  background: #F1F6F2;
+  height: 120px;
+}
+#nav .notice .list li, #nav .notice .mocailist li {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+#nav .notice .list li a, #nav .notice .mocailist li a {
+  color: #666666;
+}
+#nav .notice .imgnotice {
+  display: inline-block;
+  height: 220px;
+  float: left;
+}
+#nav .notice .mocailist {
+  padding: 10px 20px 10px 20px;
+  height: 40px;
+  clear: both;
+}
+#nav .allList {
+  width: 190px;
+  background: #000;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 50px;
+}
+#nav .allList li {
+  height: 34px;
+  line-height: 34px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding-left: 35px;
+  position: relative;
+  cursor: pointer;
+}
+#nav .allList li:hover {
+  background-color: #D92020;
+}
+#nav .allList li img {
+  vertical-align: text-top;
+}
+#nav .allList li span {
+  margin-left: 10px;
+}
+
+#detailMain {
+  margin-top: 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+  border-bottom: 1px solid #DDDDDD;
+  padding-left: 10px;
+  width: 1190px;
+  height: auto;
+}
+#detailMain .qg {
+  color: #666666;
+}
+#detailMain .mainShow {
+  width: 1190px;
+  height: 423px;
+}
+#detailMain .mainShow .preview {
+  float: left;
+  width: 302px;
+  height: 418px;
+}
+#detailMain .mainShow .summary {
+  float: right;
+  width: 870px;
+  height: 419px;
+}
+
+.preview_big {
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  width: 280px;
+  height: 280px;
+  position: relative;
+}
+.preview_big .glass {
+  border: 1px solid #FF9900;
+  display: none;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  z-index: 2;
+}
+
+.bigImg {
+  border: 1px solid #FF9900;
+  display: none;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  position: absolute;
+  top: 10px;
+  left: 312px;
+  z-index: 2;
+}
+.bigImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 680px;
+  height: 680px;
+}
+
+.preview_small {
+  height: 69px;
+  margin-top: 5px;
+}
+.preview_small .btn_left, .preview_small .btn_right {
+  margin: 25px 0;
+  overflow: hidden;
+  width: 10px;
+  height: 14px;
+}
+.preview_small .content {
+  float: left;
+  width: 280px;
+  height: 66px;
+  overflow: hidden;
+  position: relative;
+}
+.preview_small .content ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  overflow: hidden;
+}
+.preview_small .content li {
+  border: 1px solid #EAEAEA;
+  float: left;
+  padding: 2px;
+  margin-left: 5px;
+  width: 60px;
+  height: 60px;
+}
+.preview_small .content .active {
+  border: 1px solid red;
+}
+.preview_small .btn_left {
+  float: left;
+  background: url("../images/detail/vi_bg.png") no-repeat -80px 0;
+}
+.preview_small .btn_right {
+  float: right;
+  background: url("../images/detail/vi_bg.png") no-repeat -99px 0;
+}
+
+.preview_more {
+  height: 27px;
+  line-height: 27px;
+  margin-top: 10px;
+}
+.preview_more .more {
+  float: left;
+  color: #3366CC;
+}
+.preview_more .share {
+  float: right;
+}
+.preview_more .share .weibo, .preview_more .share .renren, .preview_more .share .pgy, .preview_more .share .xx {
+  background: url(../images/detail/ui_enjoy.jpg) no-repeat 0 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.preview_more .share .renren {
+  background-position: 0 -16px;
+}
+.preview_more .share .pgy {
+  background-position: 0 -32px;
+}
+.preview_more .share .xx {
+  background-position: 0 -48px;
+}
+
+.summary_title p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  padding-left: 10px;
+  border-bottom: 1px dotted #ccc;
+  height: 32px;
+}
+.summary_title p span {
+  font-weight: normal;
+}
+
+.summary_price {
+  padding-left: 10px;
+  padding-top: 10px;
+  position: relative;
+  height: 95px;
+  border-bottom: 1px dotted #ccc;
+}
+.summary_price .price_cankao {
+  height: 26px;
+  line-height: 26px;
+}
+.summary_price .price_cankao del {
+  font-weight: bold;
+}
+.summary_price .price_limit .qianggou span {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  width: 64px;
+  background: #c7012c;
+  color: #fff;
+}
+.summary_price .price_limit .qianggou strong {
+  font-size: 26px;
+  font-weight: bold;
+  color: #c7012c;
+  letter-spacing: 2px;
+}
+.summary_price .price_limit .qianggou strong b {
+  margin: 0 2px;
+  font-size: 16px;
+}
+.summary_price .time {
+  height: 25px;
+  line-height: 25px;
+}
+.summary_price .time em {
+  color: #FF0000;
+  font-weight: normal;
+}
+.summary_price .pro_num {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #999;
+}
+
+.summary_stock {
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.lbl, .stock {
+  float: left;
+}
+
+.stock {
+  border: 1px solid #DDDDDD;
+  position: relative;
+  width: 66px;
+  height: 28px;
+}
+.stock .stock_selected {
+  height: 28px;
+  line-height: 28px;
+  margin-left: 10px;
+}
+.stock .icon {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  overflow: hidden;
+  top: 8px;
+  right: 8px;
+  background: url(../images/detail/vi_bg.png) no-repeat -120px 0;
+}
+
+.stock_mc {
+  padding: 10px;
+  position: absolute;
+  background: #fff;
+  z-index: 1;
+  display: none;
+  border: 1px solid #7B470E;
+  width: 320px;
+  height: 210px;
+}
+.stock_mc dt, .stock_mc dd {
+  border-bottom: 1px dotted #ddd;
+}
+.stock_mc dd span {
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  float: right;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  padding: 0;
+  background: url(../images/detail/bg.png) -965px -747px no-repeat;
+  text-indent: -999em;
+  cursor: pointer;
+}
+
+.serve {
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.serve span {
+  margin: 0px 3px;
+  color: #C7012C;
+}
+
+#detailMain .serve a, #detailMain .pro_comment a {
+  color: #3366CC;
+}
+
+.serve_intro {
+  height: 28px;
+  line-height: 28px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.serve_intro span {
+  margin: 0 5px;
+  color: #C7012C;
+}
+
+.pro_comment {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.pro_comment span, .pro_comment div, .pro_comment a {
+  float: left;
+}
+.pro_comment .star {
+  margin-top: 7px;
+  vertical-align: middle;
+  width: 85px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../images/detail/ui_psorce.png) no-repeat 0 -17px;
+}
+
+.choose {
+  padding: 15px;
+  border: 1px solid #EEEEEE;
+  background: #F8F8F8;
+  width: 840px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.choose_amount {
+  height: 25px;
+  line-height: 25px;
+}
+.choose_amount button {
+  width: 20px;
+  height: 20px;
+}
+.choose_amount input {
+  width: 52px;
+  height: 16px;
+  text-align: center;
+}
+
+.choose_btn {
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+}
+.choose_btn .button, .choose_btn .addCart {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+}
+.choose_btn .button {
+  background: #C81B1B url(../images/detail/vi_showmain_bg32.png) no-repeat 0 0;
+}
+.choose_btn .addCart {
+  padding-left: 30px;
+  background: #C81B1B url(../images/detail/vi_showmain_bg32.png) no-repeat 0 -100px;
+}
+.choose_btn a {
+  margin-left: 15px;
+  display: inline-block;
+}
+.choose_btn a i {
+  height: 17px;
+  line-height: 17px;
+  width: 17px;
+  display: inline-block;
+  background: url(../images/detail/vi_bg.png) no-repeat -100px -40px;
+  vertical-align: middle;
+}
+
+.argument {
+  width: 1190px;
+  height: auto;
+  overflow: hidden;
+}
+
+.colsub {
+  float: left;
+  width: 230px;
+  height: 327px;
+}
+
+.xunbaoSort {
+  padding: 5px;
+  background: #F1F1F1;
+  height: 53px;
+}
+.xunbaoSort .sort {
+  border: 1px solid #DEDEDE;
+  padding-top: 10px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #C7012C;
+  width: 203px;
+  background: #fff;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.relevant {
+  padding: 5px;
+  margin-top: 5px;
+  background: #F1F1F1;
+  height: 73px;
+}
+.relevant .rele {
+  border: 1px solid #DEDEDE;
+  font-size: 16px;
+  font-weight: bold;
+  color: #C7012C;
+  width: 218px;
+  background: #fff;
+  height: 70px;
+  border-radius: 5px;
+}
+.relevant .rele h4 {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  border-bottom: 4px solid #C7120C;
+  margin-top: 10px;
+}
+
+.scan {
+  padding: 5px;
+  margin-top: 5px;
+  background: #F1F1F1;
+  height: auto;
+}
+.scan .scanMain {
+  border: 1px solid #DEDEDE;
+  width: 218px;
+  background: #fff;
+  height: auto;
+  border-radius: 5px;
+}
+.scan .scanMain h4 {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  padding-right: 5px;
+  border-bottom: 4px solid #C7120C;
+  font-size: 16px;
+  font-weight: bold;
+  color: #C7012C;
+}
+.scan .scanMain h4 a {
+  font-weight: normal;
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
+}
+.scan .scanMain dl {
+  margin: 10px 10px;
+  overflow: hidden;
+}
+.scan .scanMain dl dt, .scan .scanMain dl dd {
+  float: left;
+}
+.scan .scanMain dl dt {
+  border: 1px solid #DDDDDD;
+  width: 77px;
+  height: 77px;
+}
+.scan .scanMain dl dd {
+  margin-left: 10px;
+  height: 20px;
+  line-height: 20px;
+  width: 105px;
+}
+.scan .scanMain dl .scanPrice {
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #C7012C;
+}
+
+.colmain {
+  float: right;
+  width: 940px;
+  height: auto;
+}
+
+.tab_triggers {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 3px solid #C7012C;
+}
+.tab_triggers li {
+  float: left;
+  height: 39px;
+  line-height: 39px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-weight: normal;
+  color: #666666;
+  border-bottom: none;
+  margin-right: -1px;
+  background: #F6F6F6;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.tab_triggers .current {
+  background: #C7012C;
+  color: #fff;
+}
+
+.proIntroduction img {
+  margin: 20px 100px;
+}
+
+.proIntro_abs {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+.proIntro_abs td {
+  height: 21px;
+  line-height: 21px;
+  width: 360px;
+}
+.proIntro_abs td a {
+  color: #0066FF;
+}
+.proIntro_abs .lbl {
+  width: 120px;
+  text-align: right;
+}
+
+.norms {
+  display: none;
+  margin-top: 10px;
+}
+.norms table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.norms td {
+  border: 1px solid #DBDBDB;
+  color: #333333;
+}
+.norms .tit, .norms .smalltit {
+  width: 120px;
+  text-align: center;
+}
+.norms .bigtit {
+  padding-left: 15px;
+  width: 710px;
+}
+.norms .tit {
+  background: #E7E7E7;
+}
+.norms .smalltit {
+  background: #F7F7F7;
+}
+
+.pack {
+  display: none;
+}
+.pack .name {
+  margin: 10px 0;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 15px;
+  color: #666666;
+}
+.pack .statement {
+  border: 1px solid #FFE9C4;
+  padding-left: 15px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #FF9927;
+}
+.pack .statement b {
+  color: #FF9900;
+}
+
+.afterSale {
+  display: none;
+  margin: 10px 0;
+  padding-left: 15px;
+  color: #666666;
+}
+.afterSale p {
+  height: 25px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=detail.css.map */
