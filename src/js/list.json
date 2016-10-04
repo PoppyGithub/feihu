@@ -1,0 +1,82 @@
+[
+  {
+    "id":"1",
+    "src":"../images/list/groupid.jpg",
+    "name" : "沾化冬枣现摘现发",
+    "name1":"5斤装，新鲜到爆，2种快递可选包邮到家。",
+    "price":"<del>&yen;148</del>",
+    "discount":"3.3折",
+    "save":"&yen;99",
+    "num":"160"
+  },
+  {
+    "id":"2",
+    "src":"../images/list/groupid2.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  },
+  {
+    "id":"3",
+    "src":"../images/list/groupid3.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  }
+  {
+    "id":"4",
+    "src":"../images/list/groupid3.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  },
+  {
+    "id":"5",
+    "src":"../images/list/groupid3.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  },
+  {
+    "id":"6",
+    "src":"../images/list/groupid3.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  },
+  {
+    "id":"7",
+    "src":"../images/list/groupid3.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  },
+  {
+    "id":"8",
+    "src":"../images/list/groupid3.jpg",
+    "name" : "管道通固体（3盒装）",
+    "name1":" 排淤、洗净、消臭、排霉；瞬间溶解淤塞物，及时疏通排水管！",
+    "price":"&yen;100",
+    "discount":"3.6折",
+    "save":"&yen;120",
+    "num":"100"
+  }
+]

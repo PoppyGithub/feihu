@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+}
+
+#header .headright .phone {
+  font-weight: bold;
+}
+
+#footer ul li img {
+  vertical-align: middle;
+}
+
+#list_nav ul, #listMain {
+  margin: 0 auto;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+#container {
+  width: 1267px;
+  height: auto;
+  margin: 0 auto;
+}
+
+#header {
+  border-bottom: 1px solid #CCCCCC;
+  height: 29px;
+  line-height: 29px;
+}
+#header .headleft {
+  float: left;
+  margin-left: 30px;
+}
+#header .headleft li {
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#header .headleft li a {
+  color: #0066FF;
+}
+#header .headleft li a:hover {
+  color: #AE0001;
+}
+#header .headright {
+  float: right;
+  margin-right: 34px;
+}
+#header .headright li {
+  float: left;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #666666;
+}
+#header .headright li a {
+  color: #666666;
+}
+#header .headright .myaccount {
+  margin-right: 43px;
+}
+#header .headright .phone {
+  margin-left: 27px;
+}
+#header .headright .internav {
+  padding: 0 5px 0 5px;
+  position: relative;
+}
+#header .headright .internav ul {
+  position: absolute;
+  padding-left: 5px;
+  border: 1px solid #CDCDCD;
+  border-top: 1px solid #fff;
+  display: none;
+  width: 62px;
+  left: -1px;
+  top: 29px;
+  background: #fff;
+}
+#header .headright .internav ul li {
+  height: 25px;
+  line-height: 25px;
+}
+#header .headright .internav ul a {
+  color: #666666;
+}
+#header .headright .internav ul a:hover {
+  color: #B60000;
+}
+
+.internavBor {
+  border-left: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
+}
+
+#footer {
+  height: 333px;
+  background: url("../images/index/bottomBor.jpg") no-repeat top center;
+  position: relative;
+}
+#footer ul {
+  float: left;
+  border-left: 1px solid #DDDDDD;
+  padding-left: 10px;
+  margin-top: 72px;
+  width: 138px;
+  font-size: 12px;
+}
+#footer ul li {
+  height: 20px;
+  line-height: 20px;
+  color: #999999;
+}
+#footer ul li img {
+  margin-left: 5px;
+}
+#footer ul .guide {
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+}
+#footer .hotline {
+  padding: 20px 0 0 20px;
+  margin-left: 175px;
+  border-left: 0 solid #fff;
+  width: 250px;
+  height: 133px;
+}
+#footer .hotline li {
+  height: 25px;
+  line-height: 25px;
+}
+#footer .hotline dt, #footer .hotline dd {
+  float: left;
+}
+#footer .hotline dt img, #footer .hotline dd img {
+  padding: 0 24px 0 12px;
+}
+#footer .hotline span {
+  font-size: 18px;
+}
+#footer .hotline dd {
+  height: 25px;
+  line-height: 25px;
+  width: 140px;
+  text-align: right;
+}
+#footer .hotline dd span {
+  font-size: 12px;
+  color: #FF6600;
+}
+#footer p {
+  margin-left: 150px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #999999;
+}
+#footer p a {
+  padding: 0 5px 0 5px;
+  color: #666666;
+}
+#footer .incom {
+  position: absolute;
+  right: 140px;
+  bottom: 15px;
+}
+
+#top {
+  height: 100px;
+}
+#top .logo {
+  margin-left: 45px;
+  float: left;
+}
+#top .search {
+  width: 430px;
+  height: 30px;
+  border: 5px solid #E9E9E9;
+  float: left;
+  margin: 22px 0px 0px 46px;
+}
+#top .search input {
+  float: left;
+}
+#top .search .txt {
+  width: 348px;
+  height: 28px;
+  border: 1px solid #AE0001;
+}
+#top .search .btn {
+  width: 80px;
+  height: 30px;
+  background: #C7012C;
+  border: 0 solid #AE0001;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+#top .redpacket {
+  margin-right: 35px;
+  float: right;
+}
+
+#list_nav {
+  height: 41px;
+  background: url("../images/list/menu.jpg") repeat-x;
+}
+#list_nav ul {
+  height: 41px;
+  width: 780px;
+  overflow: hidden;
+}
+#list_nav ul li {
+  float: left;
+  line-height: 30px;
+  width: 150px;
+  text-align: center;
+}
+#list_nav ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+#list_nav ul li a:hover {
+  color: #FF9900;
+}
+#list_nav ul .home a {
+  font-weight: normal;
+  font-size: 12px;
+}
+
+#listMain {
+  width: 980px;
+  height: auto;
+}
+
+.option {
+  height: 40px;
+  line-height: 40px;
+  background: url("../images/list/option.jpg") repeat-x center bottom;
+}
+.option span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+}
+.option p {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background: url("../images/list/background.jpg") no-repeat;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.option .sina {
+  background-position: -393px -403px;
+}
+.option .qq {
+  background-position: -421px -403px;
+}
+
+.filter_item {
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #D1CC95;
+  margin-top: 10px;
+}
+.filter_item span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666;
+}
+.filter_item span, .filter_item li {
+  float: left;
+  padding-left: 20px;
+}
+.filter_item li {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
+.filter_item .first {
+  margin-top: 10px;
+  margin-left: 20px;
+  padding-left: 0px;
+  height: 18px;
+  line-height: 18px;
+  width: 33px;
+  text-align: center;
+  background: #C7012C;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.fth_toolbar {
+  width: 978px;
+  height: 40px;
+  position: static;
+  top: 0;
+  z-index: 100;
+  height: 39px;
+  line-height: 39px;
+  border: 1px solid #D1CC95;
+  margin-top: -1px;
+  background: #F7F7F7;
+}
+.fth_toolbar .current {
+  background: #fff;
+  color: #C7012C;
+}
+.fth_toolbar a {
+  float: left;
+  border: 1px solid #D1CC95;
+  margin-left: -1px;
+  margin-top: -1px;
+  height: 39px;
+  line-height: 39px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+  padding-left: 20px;
+  display: block;
+  width: 47px;
+  position: relative;
+}
+.fth_toolbar .default {
+  padding-left: 10px;
+  width: 57px;
+}
+.fth_toolbar .sale span, .fth_toolbar .priceDef span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  background: url("../images/list/tool_icon.png") no-repeat;
+}
+.fth_toolbar .priceDef span {
+  background-position: -15px 0;
+}
+.fth_toolbar .modeImg_curr, .fth_toolbar .modeList {
+  float: right;
+}
+.fth_toolbar .modeImg_curr span, .fth_toolbar .modeList span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 8px;
+  top: 13px;
+  background: url("../images/list/tool_icon.png") no-repeat;
+}
+.fth_toolbar .modeImg_curr span {
+  background-position: -45px 0;
+}
+.fth_toolbar .modeList span {
+  background-position: -30px 0;
+}
+
+.list_con {
+  margin-top: 10px;
+  height: auto;
+  overflow: hidden;
+}
+.list_con .mainLeft {
+  float: left;
+  width: 750px;
+  height: auto;
+}
+.list_con .mainRight {
+  float: right;
+  width: 230px;
+  height: 2239px;
+}
+
+.box_wrap {
+  float: left;
+  margin: 0 10px 10px 0;
+  width: 365px;
+  position: relative;
+  display: inline;
+}
+
+.num {
+  background: url("../images/list/background.jpg") no-repeat -317px -273px;
+  float: left;
+  width: 38px;
+  height: 45px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font: bold 25px/38px "Microsoft Yahei";
+  color: #f60;
+  text-align: center;
+}
+
+.box {
+  padding-left: 33px;
+}
+.box .box_title {
+  height: 16px;
+  background: url("../images/list/box_title.jpg") no-repeat;
+}
+.box .box_title .right {
+  float: right;
+  width: 20px;
+  height: 16px;
+  background: url("../images/list/box_title.jpg") no-repeat right 0;
+}
+.box .box_main {
+  width: 332px;
+  height: 410px;
+  background: url("../images/list/box_main.jpg") repeat-y left 0;
+}
+.box .box_main .main_left {
+  float: left;
+  margin-left: 15px;
+  width: 300px;
+  overflow: hidden;
+  display: inline;
+}
+.box .box_main .main_left .txt {
+  height: 60px;
+  line-height: 26px;
+  width: 307px;
+}
+.box .box_main .main_left .txt a {
+  font-size: 14px;
+  color: #666;
+}
+.box .box_main .main_left .txt span {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f90;
+  line-height: 28px;
+}
+.box .box_main .main_left .txt em {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  overflow: hidden;
+  font-style: normal;
+}
+.box .box_main .main_left .info {
+  position: absolute;
+  top: 80px;
+  left: 52px;
+}
+.box .box_main .main_left .info img {
+  width: 295px;
+  height: 220px;
+}
+.box .box_main .main_left .priceAll {
+  position: absolute;
+  right: 20px;
+  top: 310px;
+  width: 110px;
+  height: 70px;
+  font-size: 13px;
+}
+.box .box_main .main_left .priceAll li {
+  float: left;
+  padding: 5px 10px;
+  color: #666;
+}
+.box .box_main .main_left .priceAll .discount {
+  font: bold 14px/16px "Microsoft Yahei";
+}
+.box .box_main .main_left .priceAll .price {
+  color: #CA0606;
+  font-weight: bold;
+}
+.box .box_main .main_left .downTime {
+  position: absolute;
+  top: 390px;
+  left: 50px;
+  color: #666;
+  width: 230px;
+}
+.box .box_main .main_left .purchased {
+  position: absolute;
+  top: 390px;
+  right: 50px;
+  height: 20px;
+  overflow: hidden;
+}
+.box .box_main .main_left .purchased li {
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+}
+.box .box_main .main_left .purchased .count {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF6600;
+}
+.box .box_main .main_right {
+  float: right;
+  width: 10px;
+  height: 100%;
+  background: url("../images/list/box_main.jpg") repeat-y right 0;
+}
+
+.box_bottom {
+  height: 16px;
+  background: url("../images/list/box_bottom.jpg") no-repeat;
+}
+.box_bottom .right {
+  float: right;
+  width: 20px;
+  height: 16px;
+  background: url("../images/list/box_bottom.jpg") no-repeat right 0;
+}
+
+.tolPrice {
+  display: block;
+  width: 224px;
+  height: 78px;
+  background: url("../images/list/background.jpg") no-repeat -323px -98px;
+  position: absolute;
+  top: 310px;
+  left: 0;
+  overflow: hidden;
+}
+.tolPrice p {
+  float: left;
+  padding-left: 32px;
+  font: bold 25px/66px "Microsoft Yahei";
+  color: #fff;
+}
+.tolPrice p span {
+  font: bold 36px/66px "Microsoft Yahei";
+}
+.tolPrice .child {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+  display: block;
+  clear: both;
+}
+.tolPrice .box_btn {
+  margin: 13px 12px 0 0;
+  float: right;
+  display: block;
+  width: 78px;
+  height: 42px;
+  background: url("../images/list/background.jpg") no-repeat -561px -201px;
+}
+
+.notice, .recommend, .explain {
+  border: 1px solid #D1CC98;
+  height: 164px;
+  margin-top: 10px;
+}
+.notice .not_title, .notice .rec_title, .notice .exp_title, .recommend .not_title, .recommend .rec_title, .recommend .exp_title, .explain .not_title, .explain .rec_title, .explain .exp_title {
+  border-bottom: 1px solid #D1CC98;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  width: 218px;
+  padding-left: 10px;
+  background: url("../images/list/background.jpg") no-repeat 0 -18px;
+}
+.notice .not_main, .recommend .not_main, .explain .not_main {
+  padding: 10px 10px;
+  clear: both;
+}
+.notice .not_main li, .recommend .not_main li, .explain .not_main li {
+  height: 22px;
+  line-height: 22px;
+}
+.notice .not_main a, .recommend .not_main a, .explain .not_main a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.recommend {
+  height: auto;
+}
+
+.rec_main {
+  padding: 10px;
+  overflow: hidden;
+}
+.rec_main dl {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.rec_main dt, .rec_main dd {
+  float: left;
+}
+.rec_main dd {
+  font-size: 12px;
+  font-weight: normal;
+  color: #666666;
+  margin-left: 10px;
+  width: 100px;
+  line-height: 18px;
+}
+.rec_main .rec_price {
+  font-weight: bold;
+  color: #C9002C;
+}
+
+.explain {
+  height: auto;
+}
+
+.exp_main {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #666;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.backTop {
+  display: none;
+  width: 20px;
+  height: 70px;
+  background: url("../images/list/top.png") no-repeat;
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+}
+
+b {
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=list.css.map */

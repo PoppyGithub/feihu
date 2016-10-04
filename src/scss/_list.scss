@@ -1,0 +1,435 @@
+#top{
+  height: 100px;
+  .logo{
+    @include setMargin(left,45px);
+    @include setfloat(left);
+  }
+  .search{
+    width: 430px;
+    height: 30px;
+    @include setBorder(5px,#E9E9E9);
+    @include setfloat(left);
+    @include setMarginF(22px,0px,0px,46px);
+    input{
+      @include setfloat(left);
+    }
+    .txt{
+      width: 348px;
+      height: 28px;
+      @include setBorder(1px,#AE0001);
+    }
+    .btn{
+      width: 80px;
+      height: 30px;
+      background:#C7012C;
+      @include setBorder(0,#AE0001);
+      @include setFont(14px,bold,#fff);
+    }
+  }
+  .redpacket{
+    @include setMargin(right,35px);
+    @include setfloat(right);
+  }
+}
+
+#list_nav{
+  height: 41px;
+  background: url("../images/list/menu.jpg") repeat-x;
+  ul{
+    @extend %marginAuto;
+    height: 41px;
+    width: 780px;
+    overflow: hidden;
+    li{
+      @include setfloat(left);
+      line-height: 30px;
+      width: 150px;
+      text-align: center;
+      a{
+        @include setFont(14px,bold,#fff);
+      }
+      a:hover{
+        color: $hovercolor;
+      }
+    }
+    .home{
+      a{
+        font-weight: normal;
+        font-size: 12px;
+      }
+    }
+  }
+}
+#listMain{
+  @extend %marginAuto;
+  width: 980px;
+  height: auto;
+}
+.option{
+  @include setHeight(40px);
+  background: url("../images/list/option.jpg") repeat-x center bottom;
+  span{
+    @include setFont(12px,normal,#666666);
+  }
+  p{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url("../images/list/background.jpg") no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .sina{
+    background-position: -393px -403px;
+  }
+  .qq{
+    background-position:-421px -403px;
+  }
+}
+.filter_item{
+  @include setHeight(40px);
+  @include setBorder(1px,#D1CC95);
+  @include setMargin(top,10px);
+  span{
+    @include setFont(12px,600,#666);
+  }
+  span,li{
+    @include setfloat(left);
+    @include setPadding(left,20px);
+  }
+  li{
+    @include setFont(12px,normal,#666);
+  }
+  .first{
+    @include setMargin(top,10px);
+    @include setMargin(left,20px);
+    @include setPadding(left,0px);
+    @include setHeight(18px);
+    width: 33px;
+    text-align: center;
+    background: #C7012C;
+    @include setFont(12px,normal,#fff);
+  }
+}
+.fth_toolbar{
+  width:978px;
+  height:40px;
+  position: static;
+  top: 0;
+  z-index: 100;
+  .current{
+    background: #fff;
+    color: #C7012C;
+  }
+  @include setHeight(39px);
+  @include setBorder(1px,#D1CC95);
+  @include setMargin(top,-1px);
+  background: #F7F7F7;
+  a{
+    @include setfloat(left);
+    @include setBorder(1px,#D1CC95);
+    @include setMargin(left,-1px);
+    @include setMargin(top,-1px);
+    @include setHeight(39px);
+    @include setFont(12px,normal,#666);
+    @include setPadding(left,20px);
+    display: block;
+    width: 47px;
+    position: relative;
+  }
+  .default{
+    @include setPadding(left,10px);
+    width: 57px;
+  }
+  .sale,.priceDef{
+    span{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 8px;
+      top:15px;
+      background: url("../images/list/tool_icon.png") no-repeat;
+    }
+  }
+  .priceDef {
+    span {
+      background-position: -15px 0;
+    }
+  }
+  .modeImg_curr,.modeList{
+    @include setfloat(right);
+    span{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 8px;
+      top:13px;
+      background: url("../images/list/tool_icon.png") no-repeat;
+    }
+  }
+  .modeImg_curr{
+    span{
+      background-position: -45px 0;
+    }
+  }
+  .modeList{
+    span{
+      background-position: -30px 0;
+    }
+  }
+}
+.list_con{
+  @include setMargin(top,10px);
+  height: auto;
+  overflow: hidden;
+  .mainLeft{
+    @include setfloat(left);
+    width: 750px;
+    height: auto;
+  }
+  .mainRight{
+    @include setfloat(right);
+    width: 230px;
+    height: 2239px;
+  }
+}
+.box_wrap{
+  @include setfloat(left);
+  @include setMarginF(0,10px,10px,0);
+  width: 365px;
+  position: relative;
+  display: inline;
+}
+.num{
+  background: url("../images/list/background.jpg") no-repeat -317px -273px;
+  float: left;
+  width: 38px;
+  height: 45px;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  font: bold 25px/38px "Microsoft Yahei";
+  color: #f60;
+  text-align: center;
+}
+.box{
+  @include setPadding(left,33px);
+  .box_title{
+    height: 16px;
+    background: url("../images/list/box_title.jpg") no-repeat;
+    .right{
+      @include setfloat(right);
+      width: 20px;
+      height: 16px;
+      background:url("../images/list/box_title.jpg") no-repeat right 0 ;
+    }
+  }
+  .box_main{
+    width: 332px;
+    height: 410px;
+    background:url("../images/list/box_main.jpg") repeat-y left 0 ;
+    .main_left{
+      @include setfloat(left);
+      @include setMargin(left,15px);
+      width: 300px;
+      overflow: hidden;
+      display: inline;
+      .txt{
+        height: 60px;
+        line-height: 26px;
+        width: 307px;
+        a{
+          font-size: 14px;
+          color: #666;
+        }
+        span{
+          @include setfloat(left);
+          @include setFont(20px,bold,#f90);
+          line-height: 28px;
+        }
+        em{
+          @include setFont(20px,bold,#333);
+          @include setHeight(28px);
+          display: block;
+          overflow: hidden;
+          font-style: normal;
+        }
+      }
+      .info{
+        img{
+          width: 295px;
+          height: 220px;
+        }
+        position: absolute;
+        top: 80px;
+        left: 52px;
+      }
+      .priceAll{
+        position: absolute;
+        right: 20px;
+        top: 310px;
+        width: 110px;
+        height: 70px;
+        font-size: 13px;
+        li{
+          @include setfloat(left);
+          @include setPaddingTwo(5px,10px);
+          color: #666;
+        }
+        .discount{
+          font: bold 14px/16px "Microsoft Yahei";
+        }
+        .price{
+          color: #CA0606;
+          font-weight: bold;
+        }
+      }
+      .downTime{
+        position: absolute;
+        top: 390px;
+        left: 50px;
+        color: #666;
+        width: 230px;
+      }
+      .purchased{
+        position: absolute;
+        top: 390px;
+        right: 50px;
+        height: 20px;
+        overflow: hidden;
+        li{
+          @include setfloat(left);
+          @include setFont(12px,normal,#666);
+        }
+        .count{
+          @include setFont(14px,bold,#FF6600);
+        }
+      }
+    }
+    .main_right{
+      @include setfloat(right);
+      width: 10px;
+      height: 100%;
+      background: url("../images/list/box_main.jpg") repeat-y right 0;
+    }
+  }
+}
+.box_bottom{
+  height: 16px;
+  background: url("../images/list/box_bottom.jpg") no-repeat;
+  .right{
+    @include setfloat(right);
+    width: 20px;
+    height: 16px;
+    background:url("../images/list/box_bottom.jpg") no-repeat right 0 ;
+  }
+}
+.tolPrice{
+  display: block;
+  width: 224px;
+  height: 78px;
+  background: url("../images/list/background.jpg") no-repeat -323px -98px;
+  position: absolute;
+  top: 310px;
+  left: 0;
+  overflow: hidden;
+  p{
+    float: left;
+    padding-left: 32px;
+    font: bold 25px/66px "Microsoft Yahei";
+    color: #fff;
+    span{
+      font: bold 36px/66px "Microsoft Yahei";
+    }
+  }
+  .child{
+    @include setFont(12px,bold,#fff);
+    position: absolute;
+    top: 50px;
+    left: 35px;
+    display: block;
+    clear: both;
+  }
+  .box_btn{
+    @include setMarginF(13px,12px,0,0);
+    @include setfloat(right);
+    display: block;
+    width: 78px;
+    height: 42px;
+    background: url("../images/list/background.jpg") no-repeat -561px -201px;
+  }
+}
+
+.notice,.recommend,.explain{
+  @include setBorder(1px,#D1CC98);
+  height: 164px;
+  @include setMargin(top,10px);
+  .not_title,.rec_title,.exp_title{
+    @include setBorderdir(bottom,1px,#D1CC98);
+    @include setfloat(left);
+    @include setHeight(30px);
+    @include setFont(12px,bold,#333);
+    width: 218px;
+    padding-left: 10px;
+    background: url("../images/list/background.jpg") no-repeat 0 -18px;
+  }
+  .not_main{
+    @include setPaddingTwo(10px,10px);
+    clear: both;
+    li{
+      @include setHeight(22px);
+    }
+    a{
+      @include setFont(12px,normal,#666666);
+    }
+  }
+}
+.recommend{
+  height: auto;
+}
+.rec_main{
+  @include setPaddingTol(10px);
+  overflow: hidden;
+  dl{
+    @include setMargin(bottom,10px);
+    overflow: hidden;
+  }
+  dt,dd{
+    @include setfloat(left);
+  }
+  dd{
+    @include setFont(12px,normal,#666666);
+    @include setMargin(left,10px);
+    width: 100px;
+    line-height: 18px;
+  }
+  .rec_price{
+    font-weight: bold;
+    color: #C9002C;
+  }
+}
+.explain{
+  height: auto;
+}
+.exp_main{
+  @include setPaddingTol(10px);
+  @include setFont(12px,normal,#666);
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.backTop{
+  display: none;
+  width: 20px;
+  height: 70px;
+  background: url("../images/list/top.png") no-repeat;
+  position: fixed;
+  right: 0;
+  bottom: 80px;
+}
+
+b{
+  font-weight: normal;
+}

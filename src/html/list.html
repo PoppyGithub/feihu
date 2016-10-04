@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>飞虎乐购-商品详情</title>
-    <link rel="stylesheet" href="../css/detail.css" type="text/css">
+    <link rel="stylesheet" href="../css/list.css" type="text/css">
     <script src="../js/lib/jquery-1.8.3.js"></script>
-    <script src="../js/detail.js"></script>
+    <script src="../js/list.js"></script>
     <script src="../js/lib/cookie.js"></script>
 </head>
 <body>
@@ -40,302 +40,1048 @@
         </div>
         <a href="#" class="redpacket"><img src="../images/index/redpacket.jpg" alt=""></a>
     </div>
-    <div id="nav">
-        <div class="category">全部商品分类<span></span></div>
-        <div class="mainnav">
-            <a href="#" class="zhen">臻鼎摸彩</a>
-            <a href="#">首页</a>
-            <a href="#">奶粉专区<span><img src="../images/index/sl_header_new.gif"></span></a>
-            <a href="#">飞虎团购<span><img src="../images/index/sl_header_hot.gif"></span></a>
-        </div>
-        <ul class="shopcar">
-            <li class="count"><a href="#">购物车(<span>0</span>)</a></li>
-            <li class="account"><a href="#">去结算<img src="../images/index/pointRight.jpg"></a></li>
+    <div id="list_nav">
+        <ul>
+            <li><a href="#">今日团购(87)</a></li>
+            <li><a href="#">团购集结号(0)</a></li>
+            <li><a href="#">精彩回顾</a></li>
+            <li><a href="#">玩转团购</a></li>
+            <li class="home"><a href="#">返回飞虎乐购</a></li>
         </ul>
     </div>
-    <div id="detailMain">
-        <div class="wrapper">
-            <a href="#" class="qg">限时抢购</a> >
-            <span>华美月饼&nbsp;金丽莎系列&nbsp;心意佳礼450g</span>
+    <div id="listMain">
+        <div class="option">
+            <span>关注我们:</span>
+            <p class="sina"></p>
+            <p class="qq"></p>
         </div>
-        <div class="mainShow">
-            <div class="preview">
-                <div class="preview_big">
-                    <img src="../images/detail/1.jpg" alt="">
-                    <div class="glass"></div>
-                    <div class="bigImg">
-                        <img src="../images/detail/1.jpg" alt="">
+        <div class="filter_item">
+            <span>产品分类:</span>
+            <ul>
+                <li class="first">全部</li>
+                <li>食品/健康</li>
+                <li>家居家纺</li>
+                <li>钟表首饰</li>
+                <li>服装鞋帽</li>
+                <li>洗护美妆</li>
+                <li>礼品箱包</li>
+                <li>运动健康</li>
+            </ul>
+        </div>
+        <div class="fth_toolbar">
+            <a href="#" class="default current">默认排序</a>
+            <a href="#" class="sale">销量<span></span></a>
+            <a href="#" class="priceDef">价格<span></span></a>
+            <a href="#" class="modeList"><span></span>块状</a>
+            <a href="#" class="modeImg_curr"><span></span>树状</a>
+        </div>
+        <div class="list_con">
+            <div class="mainLeft">
+                <div class="box_wrap">
+                    <div class="num">1</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <!--<em>沾化冬枣现摘现发</em>
+                                        <b>5斤装，新鲜到爆，2种快递可选包邮到家。</b>-->
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <!--<img src="../images/list/groupid.jpg" alt="">-->
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <!--<li><del>¥148</del></li>-->
+                                        <li>折扣</li>
+                                        <!--<li class="discount">3.3折</li>-->
+                                        <li>节省</li>
+                                        <!--<li class="price">¥99</li>-->
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <!--<li class="count">160</li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元---69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="preview_small">
-                    <div class="btn_left"></div>
-                    <div class="content">
+                <div class="box_wrap">
+                    <div class="num">2</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <!--<em>沾化冬枣现摘现发</em>
+                                        <b>5斤装，新鲜到爆，2种快递可选包邮到家。</b>-->
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <!--<img src="../images/list/groupid.jpg" alt="">-->
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <!--<li><del>¥148</del></li>-->
+                                        <li>折扣</li>
+                                        <!--<li class="discount">3.3折</li>-->
+                                        <li>节省</li>
+                                        <!--<li class="price">¥99</li>-->
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <!--<li class="count">160</li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元---69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="box_wrap">
+                    <div class="num">3</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">4</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">5</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">6</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">7</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">8</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">9</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">10</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">11</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">12</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">13</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">14</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">15</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">16</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">17</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_wrap">
+                    <div class="num">18</div>
+                    <div class="box">
+                        <div class="box_title">
+                            <div class="right"></div>
+                        </div>
+                        <div class="box_main">
+                            <div class="main_left">
+                                <div class="txt">
+                                    <a href="#">
+                                        <span>今日团购:</span>
+                                        <em>沾化冬枣现摘现发</em>
+                                        5斤装，新鲜到爆，2种快递可选包邮到家。
+                                    </a>
+                                </div>
+                                <div class="info">
+                                    <img src="../images/list/groupid.jpg" alt="">
+                                </div>
+                                <div class="priceAll">
+                                    <ul>
+                                        <li>价值</li>
+                                        <li><del>¥148</del></li>
+                                        <li>折扣</li>
+                                        <li class="discount">3.3折</li>
+                                        <li>节省</li>
+                                        <li class="price">¥99</li>
+                                    </ul>
+                                </div>
+                                <p class="downTime">1111</p>
+                                <div class="purchased">
+                                    <ul>
+                                        <li>已购买数量:</li>
+                                        <li class="count">160</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main_right">
+                            </div>
+                        </div>
+                        <div class="box_bottom">
+                            <div class="right"></div>
+                        </div>
+                        <div class="tolPrice">
+                            <p>¥<span>49</span></p>
+                            <div class="child">49元-&#45;&#45;69元</div>
+                            <a href="#" class="box_btn"></a>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="mainRight">
+                <div class="notice">
+                    <div class="not_title">公告板</div>
+                    <div class="not_main">
                         <ul>
-                            <li class="active"><img src="../images/detail/lh.jpg"></li>
-                            <li><img src="../images/detail/lh2.jpg"></li>
-                            <li><img src="../images/detail/hand.jpg"></li>
+                            <li><a href="#">直降200！九阳铁釜内胆开团！</a></li>
+                            <li><a href="#">惊爆9.9元风扇团购啦！</a></li>
+                            <li><a href="#">99元品牌落地扇开团啦！</a></li>
+                            <li><a href="#">家电爆款团！29元起！看看！</a></li>
+                            <li><a href="#">11.11 我们不止一个团购价！</a></li>
                         </ul>
                     </div>
-                    <div class="btn_right"></div>
                 </div>
-                <div class="preview_more">
-                    <a href="#" class="more">浏览更多图片</a>
-                    <div class="share">
-                        分享到:
-                        <a href="#" class="weibo"></a>
-                        <a href="#" class="renren"></a>
-                        <a href="#" class="pgy"></a>
-                        <a href="#" class="xx"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="summary">
-                <div class="summary_title">
-                    <p>华美月饼&nbsp;金丽莎系列&nbsp;心意佳礼<span>450g</span></p>
-                </div>
-                <div class="summary_price">
-                    <p class="price_cankao">
-                        飞&nbsp;虎&nbsp;价:
-                        <del>￥68</del>
-                    </p>
-                    <p class="price_limit">
-                        <span class="qianggou">
-                            <span>抢&nbsp;购&nbsp;价</span><strong><b>¥</b>49</strong>
-                        </span>
-                        <span class="price_intro">
-                            本商品为特殊商品，不支持使用优惠券
-                        </span>
-                    </p>
-                    <p class="time">
-                        剩余时间：<em></em>
-                    </p>
-                    <p class="pro_num">
-                        商品编号：2060109003911
-                    </p>
-                </div>
-                <div class="summary_stock">
-                    <span class="lbl">库&nbsp;存:送至</span>
-                    <div class="stock">
-                        <div class="stock_mt">
-                            <p class="stock_selected">广东</p>
-                            <i class="icon"></i>
-                        </div>
-                        <div class="stock_mc">
-                            <div class="close"></div>
-                            <dt>请选择您的收货省份：</dt>
-                            <dd>
-                                <span>湖南</span>
-                                <span>湖北</span>
-                                <span>广西</span>
-                                <span>广东</span>
-                                <span>安徽</span>
-                                <span>山东</span>
-                            </dd>
-                            <dd>
-                                <span>湖南</span>
-                                <span>湖北</span>
-                                <span>广西</span>
-                                <span>广东</span>
-                                <span>安徽</span>
-                                <span>山东</span>
-                            </dd>
-                            <dd>
-                                <span>湖南</span>
-                                <span>湖北</span>
-                                <span>广西</span>
-                                <span>广东</span>
-                                <span>安徽</span>
-                                <span>山东</span>
-                            </dd>
-                            <dd>
-                                <span>湖南</span>
-                                <span>湖北</span>
-                                <span>广西</span>
-                                <span>广东</span>
-                                <span>安徽</span>
-                                <span>山东</span>
-                            </dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <p class="serve">
-                    服&nbsp;务:由<span>菜园农产品</span>发货，并提供售后服务。<a href="#">第三方服务说明</a>
-                </p>
-                <p class="serve_intro">
-                    温馨提示:第三方直销商品<span>不参与免额减运费</span>活动，且<span>不支持货到付款</span>
-                </p>
-                <div class="pro_comment">
-                    <span>商品评价:</span>
-                    <div class="star"></div>
-                    <a href="#">(共0条评论)</a>
-                </div>
-                <div class="choose">
-                    <div class="choose_amount">
-                        我 要 买:
-                        <button class="jian">-</button>
-                        <input type="text" value="1">
-                        <button class="jia">+</button>
-                    </div>
-                    <div class="choose_btn">
-                        <button class="button">立即购买</button>
-                        <button class="addCart">加入购物车</button>
-                        <a href="#"><i></i>加入收藏</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="argument">
-            <div class="colsub">
-                <div class="xunbaoSort"><div class="sort">抢购商品分类</div></div>
-                <div class="relevant"><div class="rele"><h4>相关抢购商品</h4></div></div>
-                <div class="scan">
-                    <div class="scanMain">
-                        <h4>最近浏览过的商品<a href="#">清空</a></h4>
+                <div class="recommend">
+                    <div class="rec_title">推荐商品</div>
+                    <div class="rec_main">
                         <dl>
-                            <dt><img src="../images/detail/mooncake.jpg"></dt>
-                            <dd>华美月饼 金丽莎系</dd><dd>列 心意佳礼 450g</dd>
-                            <dd class="scanPrice">¥ 49</dd>
+                            <dt><img src="../images/list/c1.jpg"></dt>
+                            <dd>北极绒 蒙古包三开门拉链蚊帐 带底包 1.8米床</dd>
+                            <dd class="rec_price">¥118</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/list/c1.jpg"></dt>
+                            <dd>北极绒 蒙古包三开门拉链蚊帐 带底包 1.8米床</dd>
+                            <dd class="rec_price">¥118</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/list/c1.jpg"></dt>
+                            <dd>北极绒 蒙古包三开门拉链蚊帐 带底包 1.8米床</dd>
+                            <dd class="rec_price">¥118</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/list/c1.jpg"></dt>
+                            <dd>北极绒 蒙古包三开门拉链蚊帐 带底包 1.8米床</dd>
+                            <dd class="rec_price">¥118</dd>
+                        </dl>
+                        <dl>
+                            <dt><img src="../images/list/c1.jpg"></dt>
+                            <dd>北极绒 蒙古包三开门拉链蚊帐 带底包 1.8米床</dd>
+                            <dd class="rec_price">¥118</dd>
                         </dl>
                     </div>
                 </div>
-            </div>
-            <div class="colmain">
-                <ul class="tab_triggers">
-                    <li class="current">产品介绍</li>
-                    <li>规格参数</li>
-                    <li>包装清单</li>
-                    <li>售后服务</li>
-                </ul>
-                <div class="proIntroduction arg">
-                    <table class="proIntro_abs">
-                        <tbody>
-                        <tr>
-                            <td class="lbl">生产厂家:</td>
-                            <td>湖南御泥坊化妆品有限公司</td>
-                            <td class="lbl">商品产地:</td>
-                            <td>湖南</td>
-                        </tr>
-                        <tr>
-                            <td class="lbl">商品毛重:</td>
-                            <td>0.531Kg</td>
-                            <td class="lbl">上架时间:</td>
-                            <td>2015/12/2 10:42:20</td>
-                        </tr>
-                        <tr>
-                            <td class="lbl">价格举报:</td>
-                            <td>如果您发现商品价有错误，<a href="#">欢迎举报</a></td>
-                            <td class="lbl">纠错信息:</td>
-                            <td>如果您发现商品信息不准确 <a href="#">欢迎纠错</a></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <img src="../images/detail/intro.jpg" alt="">
-                </div>
-                <div class="norms arg">
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td rowspan="3" class="tit">主体</td>
-                            <td class="smalltit">品牌</td>
-                            <td class="bigtit">御泥坊</td>
-                        </tr>
-                        <tr>
-                            <td class="smalltit">名称</td>
-                            <td class="bigtit">芦荟补水保湿凝胶两瓶装</td>
-                        </tr>
-                        <tr>
-                            <td class="smalltit">类型</td>
-                            <td class="bigtit">身体乳/霜</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2"  class="tit">规格</td>
-                            <td class="smalltit">容量</td>
-                            <td class="bigtit">300g</td>
-                        </tr>
-                        <tr>
-                            <td class="smalltit">功效</td>
-                            <td class="bigtit">保湿，滋养</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="pack arg">
-                    <p class="name">御泥坊芦荟补水保湿凝胶两瓶装</p>
-                    <div class="statement"><b>特别声明:</b>因厂家商品批次不同，您收到的货物可能会与网站展示图片、说明不完全一致，请您以收到的商品实物为准。如给您带来不便，敬请谅解！</div>
-                </div>
-                <div class="afterSale arg">
-                    <p>洗化美妆、个人护理用品类商品</p>
-                    <p>1) 化妆品、洗化用品、护肤品、个人护理用品类商品，非质量问题不予退换货。</p>
-                    <p>2) 因个人喜好（如外观、色泽、型号、气味等）或不适合个人发质、肤质等理由要求退换货的，将不予处理。</p>
-                    <p>3) 如您在使用时对商品质量表示怀疑，请出具书面鉴定，我们会按照国家法律规定予以处理。</p>
-                    <p>4) 签收商品时，请您一定在配送人员在场时当面检查商品与送货单是否一致。自提商品时请当场验收，若商品有破损、渗漏、缺少、配送有误等问题，请当即与飞虎客服联系。若您在签收或自提后发现上述现象，我们将不予处理。</p>
+                <div class="explain">
+                    <div class="exp_title">公告板</div>
+                    <div class="exp_main">
+                        <ul>
+                            <li>1. 团购商品是飞虎乐购为答谢广大新老客户而准备的特惠商品，所有团购商品仅适用于终端个人用户。以转售为目的之个人、炒货商或者供应商等非终端客户参与团购，飞虎乐购有权取消其订单。</li>
+                            <li>2. 团购产品需要单独下单：团购产品受团购时间限制，牵涉到“是否组团成功”等因素，故不能和其他商品一起下单。</li>
+                            <li>3. 团购商品不能同时享受优惠券、减免运费等其他优惠活动，但部份团购商品不需要支付运费。</li>
+                            <li>4. 购买团购商品可通过以下途径支付：体验点付款、货到付款、银行转帐、邮局汇款、在线支付、飞虎余额、礼品卡支付。</li>
+                            <li>5. 团购商品从团购结束之次日起7天内安排发货。但在货源充足且达到团购标准的情况下，我们将在您下单后提前安排发货。</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <div class="link clearfix">
-                <ul class="hotline">
-                    <li>订购/资讯热线:<span>400-883-6900</span></li>
-                    <li>订购/资讯热线:<span>400-883-6900</span></li>
-                    <dl class="clearfix">
-                        <dt><img src="../images/index/phone.jpg" alt=""></dt>
-                        <dd>周一至周六：<span>08:00-21:00</span></dd>
-                        <dd>周日：<span>08:00-18:00</span></dd>
-                    </dl>
-                </ul>
-                <ul>
-                    <li class="guide">购物指南</li>
-                    <li>购物流程</li>
-                    <li>会员说明</li>
-                    <li>积分说明</li>
-                    <li>优惠券</li>
-                    <li>第三方服务说明</li>
-                    <li>团购规则</li>
-                </ul>
-                <ul>
-                    <li class="guide">支付方式</li>
-                    <li>购物流程</li>
-                    <li>会员说明</li>
-                    <li>积分说明</li>
-                    <li>优惠券</li>
-                    <li>第三方服务说明</li>
-                    <li>团购规则</li>
-                </ul>
-                <ul>
-                    <li class="guide">配送方式</li>
-                    <li>购物流程</li>
-                    <li>会员说明</li>
-                    <li>积分说明</li>
-                    <li>优惠券</li>
-                    <li>第三方服务说明</li>
-                    <li>团购规则</li>
-                </ul>
-                <ul>
-                    <li class="guide">售后服务</li>
-                    <li>购物流程</li>
-                    <li>会员说明</li>
-                    <li>积分说明</li>
-                    <li>优惠券</li>
-                    <li>第三方服务说明</li>
-                    <li>团购规则</li>
-                </ul>
-                <ul>
-                    <li class="guide">特色服务</li>
-                    <li>购物流程<img src="../images/index/N.jpg"></li>
-                    <li>会员说明<img src="../images/index/N.jpg"></li>
-                    <li>积分说明</li>
-                    <li>优惠券</li>
-                    <li>第三方服务说明</li>
-                    <li>团购规则</li>
-                </ul>
-            </div>
-            <p><a href="#">常见问题</a>|<a href="#">法律说明</a>|<a href="#">联系客服</a>|<a href="#">新闻中心</a>|<a href="#">意见箱</a></p>
-            <p>增值电信业务许可证：粤B2-20160929 | 网站备案：粤ICP备13049812 | 食品流通许可证：SP4403112014007826</p>
-            <p>食品流通许可证：SP4403112014007826</p>
-            <p>Copyright &copy; 2009-2016 深圳富士康网络有限公司 All Right</p>
-            <img class="incom" src="../images/index/Incom.jpg" alt="">
-        </div>
+        <a href="#" class="backTop"></a>
     </div>
+    <div id="footer">
+        <div class="link clearfix">
+            <ul class="hotline">
+                <li>订购/资讯热线:<span>400-883-6900</span></li>
+                <li>订购/资讯热线:<span>400-883-6900</span></li>
+                <dl class="clearfix">
+                    <dt><img src="../images/index/phone.jpg" alt=""></dt>
+                    <dd>周一至周六：<span>08:00-21:00</span></dd>
+                    <dd>周日：<span>08:00-18:00</span></dd>
+                </dl>
+            </ul>
+            <ul>
+                <li class="guide">购物指南</li>
+                <li>购物流程</li>
+                <li>会员说明</li>
+                <li>积分说明</li>
+                <li>优惠券</li>
+                <li>第三方服务说明</li>
+                <li>团购规则</li>
+            </ul>
+            <ul>
+                <li class="guide">支付方式</li>
+                <li>购物流程</li>
+                <li>会员说明</li>
+                <li>积分说明</li>
+                <li>优惠券</li>
+                <li>第三方服务说明</li>
+                <li>团购规则</li>
+            </ul>
+            <ul>
+                <li class="guide">配送方式</li>
+                <li>购物流程</li>
+                <li>会员说明</li>
+                <li>积分说明</li>
+                <li>优惠券</li>
+                <li>第三方服务说明</li>
+                <li>团购规则</li>
+            </ul>
+            <ul>
+                <li class="guide">售后服务</li>
+                <li>购物流程</li>
+                <li>会员说明</li>
+                <li>积分说明</li>
+                <li>优惠券</li>
+                <li>第三方服务说明</li>
+                <li>团购规则</li>
+            </ul>
+            <ul>
+                <li class="guide">特色服务</li>
+                <li>购物流程<img src="../images/index/N.jpg"></li>
+                <li>会员说明<img src="../images/index/N.jpg"></li>
+                <li>积分说明</li>
+                <li>优惠券</li>
+                <li>第三方服务说明</li>
+                <li>团购规则</li>
+            </ul>
+        </div>
+        <p><a href="#">常见问题</a>|<a href="#">法律说明</a>|<a href="#">联系客服</a>|<a href="#">新闻中心</a>|<a href="#">意见箱</a></p>
+        <p>增值电信业务许可证：粤B2-20160929 | 网站备案：粤ICP备13049812 | 食品流通许可证：SP4403112014007826</p>
+        <p>食品流通许可证：SP4403112014007826</p>
+        <p>Copyright &copy; 2009-2016 深圳富士康网络有限公司 All Right</p>
+        <img class="incom" src="../images/index/Incom.jpg" alt="">
+    </div>
+</div>
 </body>
 </html>
